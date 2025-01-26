@@ -1,0 +1,107 @@
+/* Container menuNavbar */
+#navbar #menuNavbar {
+  /* background-color: rgb(8, 0, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar #menuNavbar #menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#navbar #menuNavbar #menu a {
+  font-size: 0.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(215, 141, 50);
+  transition: 0.3s;
+}
+
+#navbar #menuNavbar #menu a:hover {
+  color: rgb(153, 99, 34);
+}
+
+/* dropDown */
+#navbar #menuNavbar #dropDown {
+  display: none;
+}
+
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+  #navbar #menuNavbar #menu {
+    gap: 0.7rem;
+  }
+
+  /* Tag A menu */
+  #navbar #menuNavbar #menu a {
+    font-size: 0.6rem;
+  }
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+  /* Container menuNavbar */
+  #navbar #menuNavbar {
+    justify-content: end;
+  }
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+  #navbar #menuNavbar #menu {
+    display: none;
+  }
+
+  /* Container dropDown */
+  #navbar #menuNavbar #dropDown {
+    display: block;
+  }
+
+  #navbar #menuNavbar #dropDown .menuDropMenu {
+    position: absolute;
+    box-shadow: 5px 10px 15px black;
+    background-color: rgba(0, 0, 0, 0.034);
+    border-top: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8rem;
+    top: 110%;
+    width: 100%;
+    left: 180%;
+    transition: 1s;
+  }
+
+  /* menuDropMenu addClass toggle */
+  #navbar #menuNavbar #dropDown .menuDropMenu.toggle {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+  }
+
+  #navbar #menuNavbar #dropDown .menuDropMenu.width {
+    width: 50%;
+    height: 100vh;
+  }
+
+  /* Menu */
+  #navbar #menuNavbar #dropDown .menuDropMenu a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: rgb(215, 141, 50);
+  }
+
+  #navbar #menuNavbar #dropDown .menuDropMenu a:hover {
+    color: rgb(153, 99, 34);
+  }
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  /* Tag A menuDropMenu */
+}

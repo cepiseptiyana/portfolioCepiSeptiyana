@@ -1,0 +1,61 @@
+/* Container logoNavbar */
+#navbar #logoNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar #logoNavbar a {
+  font-size: 1.1rem;
+  color: rgb(215, 141, 50);
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+#navbar #logoNavbar a span {
+  transition: 2s;
+}
+
+#navbar #logoNavbar a span:hover {
+  text-transform: uppercase;
+  color: rgb(153, 99, 34);
+}
+
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+  /* Tag A */
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+  #navbar #logoNavbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+  /* Container logoNavbar */
+  #navbar #logoNavbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  /* Tag A */
+  #navbar #logoNavbar a {
+    font-size: 1rem;
+    letter-spacing: 8px;
+  }
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  /* Tag A */
+  #navbar #logoNavbar a {
+    font-size: 0.9rem;
+  }
+}

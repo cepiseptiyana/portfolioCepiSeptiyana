@@ -1,0 +1,53 @@
+/* Container waNavbar */
+#navbar #waNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar #waNavbar img {
+  width: 2.2rem;
+}
+
+#navbar #waNavbar a {
+  font-size: 0.8rem;
+  color: green;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  transition: 0.3s;
+}
+
+#navbar #waNavbar a:hover {
+  color: rgb(153, 99, 34);
+}
+
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+  /* Tag A */
+  #navbar #waNavbar a {
+    font-size: 0.7rem;
+  }
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+  /* Container waNavbar */
+  #navbar #waNavbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  /* Tag A */
+  #navbar #waNavbar a {
+    font-size: 0.6rem;
+  }
+}

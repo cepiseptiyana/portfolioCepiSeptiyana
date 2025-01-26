@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import entryViews from './views/main.vue'
+</script>
 
 <template>
-  <main></main>
+  <main>
+    <entryViews />
+  </main>
 </template>
 
 <style scoped></style>
