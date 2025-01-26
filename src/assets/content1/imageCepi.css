@@ -1,0 +1,29 @@
+#content1 #imageCepiContent1 {
+}
+
+#content1 #imageCepiContent1 img {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+}
+
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  #content1 #imageCepiContent1 img {
+    display: flex;
+    justify-content: center;
+  }
+}

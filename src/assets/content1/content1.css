@@ -1,0 +1,38 @@
+#content1 {
+  background-color: rgba(51, 14, 14, 0.359);
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* #content1 .colom-1 {
+  width: 100%;
+}
+
+#content1 .colom-2 {
+  width: 100%;
+} */
+
+/*  */
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  #content1 {
+    padding-top: 100px;
+    flex-wrap: wrap;
+  }
+}

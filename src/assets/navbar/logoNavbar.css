@@ -6,7 +6,7 @@
 }
 
 #navbar #logoNavbar a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgb(215, 141, 50);
   letter-spacing: 5px;
   text-decoration: none;
@@ -25,6 +25,10 @@
 /* ipad */
 @media only screen and (max-width: 768px) {
   /* Tag A */
+  #navbar #logoNavbar a {
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
 }
 
 /* from medium to ipad */
@@ -44,18 +48,8 @@
     justify-content: start;
     align-items: center;
   }
-
-  /* Tag A */
-  #navbar #logoNavbar a {
-    font-size: 1rem;
-    letter-spacing: 8px;
-  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
-  /* Tag A */
-  #navbar #logoNavbar a {
-    font-size: 0.9rem;
-  }
 }

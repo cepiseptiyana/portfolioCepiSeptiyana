@@ -1,0 +1,68 @@
+#content1 #headingContent1 {
+  display: block;
+}
+
+#content1 #headingContent1 {
+  text-transform: capitalize;
+}
+
+#content1 #headingContent1 .container {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+#content1 #headingContent1 .container img {
+  width: 150px;
+}
+
+#content1 #headingContent1 .container h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  color: bisque;
+}
+
+#content1 #headingContent1 .container h2 {
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+#content1 #headingContent1 p {
+  font-size: 1.5rem;
+}
+
+/* ! Responsive */
+/* ipad */
+@media only screen and (max-width: 768px) {
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+  #content1 #headingContent1 .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #content1 #headingContent1 .container img {
+    width: 150px;
+  }
+
+  /* TEXT */
+  #content1 #headingContent1 .container h1 {
+    font-size: 14px;
+  }
+
+  #content1 #headingContent1 .container h2 {
+    font-size: 20px;
+  }
+
+  #content1 #headingContent1 p {
+    font-size: 0.5rem;
+  }
+}

@@ -4,5 +4,5 @@ let mouseOverLogoNav = defineModel('mouseOverLogoNav')
 </script>
 
 <template>
-  <a href="#" @mouseover="mouseOverLogoNav">cepi septiyana</a>
+  <a href="" @click.stop.prevent="mouseOverLogoNav">cepi septiyana</a>
 </template>
