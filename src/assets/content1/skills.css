@@ -3,12 +3,15 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
+  padding-top: 20px;
 }
 
 #content1 #skillsContent1 .headSkill h1 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: red;
   text-transform: capitalize;
+  letter-spacing: 4px;
+  font-style: italic;
 }
 
 #content1 #skillsContent1 .containerElement {
@@ -25,6 +28,12 @@
 #content1 #skillsContent1 .containerElement .container img {
   width: 2rem;
   height: 2rem;
+  transition: 0.1s;
+}
+
+#content1 #skillsContent1 .containerElement .container img:hover {
+  cursor: pointer;
+  transform: translate(0, -5px);
 }
 
 #content1 #skillsContent1 .containerElement .container .html {
@@ -47,12 +56,47 @@
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
+  #content1 #skillsContent1 {
+    padding-top: 30px;
+  }
+
+  #content1 #skillsContent1 .headSkill h1 {
+    font-size: 20px;
+  }
+
+  #content1 #skillsContent1 .containerElement {
+    display: flex;
+    gap: 0.7rem;
+  }
+
+  #content1 #skillsContent1 .containerElement .container {
+    padding: 0;
+  }
+
+  #content1 #skillsContent1 .containerElement .container img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* gambar html */
+  #content1 #skillsContent1 .containerElement .container .html {
+    width: 2rem;
+  }
+
+  #content1 #skillsContent1 .containerElement .container h6,
+  #content1 #skillsContent1 .containerElement .container h5 {
+    font-size: 10px;
+  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
+  #content1 #skillsContent1 {
+    padding-top: 30px;
+  }
+
   #content1 #skillsContent1 .headSkill h1 {
-    font-size: 14px;
+    font-size: 20px;
   }
 
   #content1 #skillsContent1 .containerElement {

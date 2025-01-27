@@ -27,12 +27,16 @@
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
+  #content1 {
+    padding-top: 120px;
+    flex-wrap: wrap;
+  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
   #content1 {
-    padding-top: 100px;
+    padding-top: 120px;
     flex-wrap: wrap;
   }
 }

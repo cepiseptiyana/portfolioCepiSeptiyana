@@ -1,3 +1,3 @@
 <template>
-  <h1>i use language</h1>
+  <h1>the skills</h1>
 </template>
