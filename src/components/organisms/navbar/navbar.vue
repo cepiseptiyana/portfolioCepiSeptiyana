@@ -6,7 +6,7 @@ import contactNavbar from '@/components/molecules/navbar/contact.vue'
 
 <template>
   <div id="navbar" class="container-fluid">
-    <div class="container-fluid bg-info">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md">
           <logoHalaman />

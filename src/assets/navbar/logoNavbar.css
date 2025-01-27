@@ -7,7 +7,7 @@
 
 #navbar #logoNavbar a {
   font-size: 1.2rem;
-  color: rgb(215, 141, 50);
+  color: rgb(255, 240, 217);
   letter-spacing: 5px;
   text-decoration: none;
 }
@@ -24,6 +24,12 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
+  #navbar #logoNavbar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
   /* Tag A */
   #navbar #logoNavbar a {
     font-size: 1.1rem;

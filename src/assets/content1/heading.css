@@ -1,6 +1,6 @@
 #content1 #headingContent1 {
   display: block;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 #content1 #headingContent1 {
@@ -18,7 +18,7 @@
 }
 
 #content1 #headingContent1 .container h1 {
-  color: bisque;
+  color: rgb(213, 160, 81);
   font-style: italic;
   font-size: 2rem;
   font-weight: bold;
@@ -29,6 +29,7 @@
 }
 
 #content1 #headingContent1 p {
+  color: rgb(255, 240, 217);
   font-size: 1.5rem;
 }
 

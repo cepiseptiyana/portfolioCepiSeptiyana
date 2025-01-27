@@ -1,5 +1,5 @@
 <script setup>
-import imageCepi from '@/assets/images/content1/cepiFoto.jpg'
+import imageCepi from '@/assets/images/content1/cepiFoto.png'
 import icongmail from '@/assets/images/content1/gmail.png'
 import iconwhatsapp from '@/assets/images/content1/whatsapp.png'
 </script>

@@ -1,6 +1,10 @@
 #content1 {
-  background-color: rgba(51, 14, 14, 0.359);
-  padding-top: 50px;
+  background: linear-gradient(to bottom right, rgb(0, 0, 148), black);
+}
+
+#content1 .container {
+  position: relative;
+  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,15 +23,19 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #content1 {
+  #content1 .container {
+    padding-top: 20px;
+  }
+
+  #content1 .container {
     column-gap: 2rem;
   }
 }
 
 /* from medium to ipad */
 @media only screen and (max-width: 767px) {
-  #content1 {
-    padding-top: 100px;
+  #content1 .container {
+    padding-top: 30px;
     flex-wrap: wrap;
   }
 }

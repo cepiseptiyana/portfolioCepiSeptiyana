@@ -43,6 +43,7 @@
 
 #content1 #skillsContent1 .containerElement .container h6,
 #content1 #skillsContent1 .containerElement .container h5 {
+  color: rgb(255, 240, 217);
   font-size: 0.6rem;
 }
 

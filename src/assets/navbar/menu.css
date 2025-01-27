@@ -18,7 +18,7 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(215, 141, 50);
+  color: rgb(213, 160, 81);
   transition: 0.3s;
 }
 
@@ -34,14 +34,11 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
-  /* #navbar #menuNavbar #menu {
-    gap: 0.7rem;
-  } */
-
-  /* Tag A menu */
-  /* #navbar #menuNavbar #menu a {
-    font-size: 0.6rem;
-  } */
+  #navbar #menuNavbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 
   #navbar #menuNavbar #menu {
     display: none;
@@ -82,7 +79,7 @@
   #navbar #menuNavbar #dropDown .menuDropMenu a {
     font-size: 0.9rem;
     text-decoration: none;
-    color: rgb(215, 141, 50);
+    color: rgb(213, 160, 81);
   }
 
   #navbar #menuNavbar #dropDown .menuDropMenu a:hover {

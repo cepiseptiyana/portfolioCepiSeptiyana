@@ -1,6 +1,6 @@
 <!-- Atom -->
 <script setup>
-import waIcon from '@/assets/images/waIcon.png'
+import waIcon from '@/assets/images/navbar/whatsapp.png'
 </script>
 
 <template>
