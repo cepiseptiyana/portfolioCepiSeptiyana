@@ -19,24 +19,23 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
+  #content1 {
+    column-gap: 2rem;
+  }
 }
 
 /* from medium to ipad */
 @media only screen and (max-width: 767px) {
+  #content1 {
+    padding-top: 100px;
+    flex-wrap: wrap;
+  }
 }
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
-  #content1 {
-    padding-top: 120px;
-    flex-wrap: wrap;
-  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
-  #content1 {
-    padding-top: 120px;
-    flex-wrap: wrap;
-  }
 }

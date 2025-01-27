@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 0.1rem;
 }
 
 #content1 #skillsContent1 .containerElement .container img {
@@ -42,59 +43,54 @@
 
 #content1 #skillsContent1 .containerElement .container h6,
 #content1 #skillsContent1 .containerElement .container h5 {
-  font-size: 11px;
+  font-size: 0.6rem;
 }
 
+/* tag p image */
 #content1 #skillsContent1 .containerElement .container p {
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* ! Responsive */
+/* laptop 900px */
+@media only screen and (max-width: 900px) {
+  #content1 #skillsContent1 {
+    padding-top: 30px;
+  }
+
+  #content1 #skillsContent1 .headSkill h1 {
+    font-size: 1.5rem;
+  }
+
+  #content1 #skillsContent1 .containerElement {
+    display: flex;
+    gap: 0.7rem;
+  }
+
+  #content1 #skillsContent1 .containerElement .container {
+    padding: 0;
+  }
+}
+
 /* ipad */
 @media only screen and (max-width: 768px) {
 }
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
-  #content1 #skillsContent1 {
-    padding-top: 30px;
-  }
-
-  #content1 #skillsContent1 .headSkill h1 {
-    font-size: 20px;
-  }
-
-  #content1 #skillsContent1 .containerElement {
-    display: flex;
-    gap: 0.7rem;
-  }
-
-  #content1 #skillsContent1 .containerElement .container {
-    padding: 0;
-  }
-
   #content1 #skillsContent1 .containerElement .container img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   /* gambar html */
   #content1 #skillsContent1 .containerElement .container .html {
-    width: 2rem;
-  }
-
-  #content1 #skillsContent1 .containerElement .container h6,
-  #content1 #skillsContent1 .containerElement .container h5 {
-    font-size: 10px;
+    width: 3rem;
   }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
-  #content1 #skillsContent1 {
-    padding-top: 30px;
-  }
-
   #content1 #skillsContent1 .headSkill h1 {
     font-size: 20px;
   }
@@ -109,17 +105,17 @@
   }
 
   #content1 #skillsContent1 .containerElement .container img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   /* gambar html */
   #content1 #skillsContent1 .containerElement .container .html {
-    width: 2rem;
+    width: 3rem;
   }
 
   #content1 #skillsContent1 .containerElement .container h6,
   #content1 #skillsContent1 .containerElement .container h5 {
-    font-size: 10px;
+    font-size: 0.6rem;
   }
 }

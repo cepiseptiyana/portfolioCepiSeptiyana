@@ -34,26 +34,15 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #navbar #menuNavbar #menu {
+  /* #navbar #menuNavbar #menu {
     gap: 0.7rem;
-  }
+  } */
 
   /* Tag A menu */
-  #navbar #menuNavbar #menu a {
+  /* #navbar #menuNavbar #menu a {
     font-size: 0.6rem;
-  }
-}
+  } */
 
-/* from medium to ipad */
-@media only screen and (max-width: 767px) {
-  /* Container menuNavbar */
-  #navbar #menuNavbar {
-    justify-content: end;
-  }
-}
-
-/* medium gadget */
-@media only screen and (max-width: 600px) {
   #navbar #menuNavbar #menu {
     display: none;
   }
@@ -99,6 +88,18 @@
   #navbar #menuNavbar #dropDown .menuDropMenu a:hover {
     color: rgb(153, 99, 34);
   }
+}
+
+/* from medium to ipad */
+@media only screen and (max-width: 767px) {
+  /* Container menuNavbar */
+  #navbar #menuNavbar {
+    justify-content: end;
+  }
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
 }
 
 /* low gadget */

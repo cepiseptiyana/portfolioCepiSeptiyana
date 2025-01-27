@@ -12,7 +12,7 @@ function humSlideShow() {
 </script>
 
 <template>
-  <div id="menuNavbar" class="container">
+  <div id="menuNavbar">
     <menuNav />
     <dropDownNav :humSlideShow="humSlideShow" />
   </div>

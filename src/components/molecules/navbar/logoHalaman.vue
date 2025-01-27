@@ -20,7 +20,7 @@ function mouseOverLogoNav() {
 </script>
 
 <template>
-  <div id="logoNavbar" class="container">
+  <div id="logoNavbar">
     <logoNavbar :mouseOverLogoNav="mouseOverLogoNav" />
   </div>
 </template>

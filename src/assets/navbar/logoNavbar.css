@@ -26,7 +26,7 @@
 @media only screen and (max-width: 768px) {
   /* Tag A */
   #navbar #logoNavbar a {
-    font-size: 14px;
+    font-size: 1.1rem;
     letter-spacing: 2px;
   }
 }
@@ -35,19 +35,13 @@
 @media only screen and (max-width: 767px) {
   #navbar #logoNavbar {
     display: flex;
-    justify-content: start;
+    justify-content: end;
     align-items: center;
   }
 }
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
-  /* Container logoNavbar */
-  #navbar #logoNavbar {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-  }
 }
 
 /* low gadget */
