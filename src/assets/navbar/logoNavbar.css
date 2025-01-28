@@ -7,6 +7,7 @@
 
 #navbar #logoNavbar a {
   font-size: 1.2rem;
+  font-style: italic;
   color: rgb(255, 240, 217);
   letter-spacing: 5px;
   text-decoration: none;

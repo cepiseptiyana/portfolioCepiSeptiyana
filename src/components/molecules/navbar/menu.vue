@@ -2,6 +2,8 @@
 import menuNav from '@/components/atoms/navbar/menu/menu.vue'
 import dropDownNav from '@/components/atoms/navbar/menu/dropDown.vue'
 
+let { movingPath } = defineProps(['movingPath'])
+
 // humburger
 function humSlideShow() {
   document.querySelector('#navbar #menuNavbar #dropDown .menuDropMenu').classList.toggle('toggle')
@@ -13,7 +15,7 @@ function humSlideShow() {
 
 <template>
   <div id="menuNavbar">
-    <menuNav />
+    <menuNav :movingPath="movingPath" />
     <dropDownNav :humSlideShow="humSlideShow" />
   </div>
 </template>

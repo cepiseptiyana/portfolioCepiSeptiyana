@@ -11,10 +11,10 @@ import iconwhatsapp from '@/assets/images/content1/whatsapp.png'
       <h6 class="card-title text-center">Cepi Septiyana</h6>
       <p class="card-title text-center">My Contact</p>
       <div>
-        <a href="">
+        <a href="mailto:cepifams3@gmail.com">
           <img :src="icongmail" alt="" />
         </a>
-        <a href="">
+        <a href="https://wa.me/6285859519463">
           <img :src="iconwhatsapp" alt="" />
         </a>
       </div>

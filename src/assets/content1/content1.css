@@ -1,6 +1,11 @@
+#content1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #content1 .container {
-  position: relative;
-  padding-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,10 +17,6 @@
 /* ipad */
 @media only screen and (max-width: 768px) {
   #content1 .container {
-    padding-top: 20px;
-  }
-
-  #content1 .container {
     column-gap: 2rem;
   }
 }
@@ -23,13 +24,20 @@
 /* from medium to ipad */
 @media only screen and (max-width: 767px) {
   #content1 .container {
-    padding-top: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 }
 
 /* medium gadget */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 540px) {
+  #content1 {
+    height: auto;
+  }
+
+  #content1 .container {
+    padding-top: 28px;
+    flex-wrap: wrap;
+  }
 }
 
 /* low gadget */

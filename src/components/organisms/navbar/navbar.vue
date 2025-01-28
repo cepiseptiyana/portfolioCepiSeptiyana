@@ -2,6 +2,8 @@
 import logoHalaman from '@/components/molecules/navbar/logoHalaman.vue'
 import menuNav from '@/components/molecules/navbar/menu.vue'
 import contactNavbar from '@/components/molecules/navbar/contact.vue'
+
+let { movingPath } = defineProps(['movingPath'])
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import contactNavbar from '@/components/molecules/navbar/contact.vue'
           <logoHalaman />
         </div>
         <div class="col-md">
-          <menuNav />
+          <menuNav :movingPath="movingPath" />
         </div>
         <div class="col-md">
           <contactNavbar />
