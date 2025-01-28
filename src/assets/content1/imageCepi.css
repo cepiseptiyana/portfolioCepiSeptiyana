@@ -1,4 +1,4 @@
-#content1 #imageCepiContent1 .card {
+#content1 #cardContent1 .card {
   background: linear-gradient(to bottom right, rgb(0, 0, 148), black);
   width: 13rem;
   padding: 5px;
@@ -6,20 +6,12 @@
   transition: 0.5s;
 }
 
-#content1 #imageCepiContent1 .card:hover {
-  box-shadow: 8px 14px 10px black;
+#content1 #cardContent1 .card:hover {
+  box-shadow: 8px 14px 10px rgb(255, 0, 0);
   transform: translate(-3px, -3px);
 }
 
-#content1 #imageCepiContent1 .card img {
-  display: flex;
-  justify-content: center;
-}
-
-#content1 #imageCepiContent1 .card .card-body {
-}
-
-#content1 #imageCepiContent1 .card .card-body h6 {
+#content1 #cardContent1 .card .card-body h6 {
   background: linear-gradient(to bottom right, rgb(0, 0, 148), black);
   border: 1px solid white;
   border-top-left-radius: 6px;
@@ -27,24 +19,24 @@
   color: rgb(255, 240, 217);
 }
 
-#content1 #imageCepiContent1 .card .card-body p {
+#content1 #cardContent1 .card .card-body p {
   color: rgb(255, 240, 217);
   font-size: 12px;
   font-weight: bold;
 }
 
-#content1 #imageCepiContent1 .card .card-body div {
+#content1 #cardContent1 .card .card-body div {
   display: flex;
   justify-content: center;
   column-gap: 0.6rem;
 }
 
-#content1 #imageCepiContent1 .card .card-body div a img {
+#content1 #cardContent1 .card .card-body div a img {
   width: 2rem;
   height: 2rem;
 }
 
-#content1 #imageCepiContent1 .card .card-body div a img:hover {
+#content1 #cardContent1 .card .card-body div a img:hover {
   cursor: pointer;
   transform: translate(0, -5px);
 }
@@ -52,24 +44,20 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #content1 #imageCepiContent1 {
+  #content1 #cardContent1 {
     padding-top: 30px;
   }
 
-  #content1 #imageCepiContent1 .card {
+  #content1 #cardContent1 .card {
     width: 12rem;
   }
 
-  #content1 #imageCepiContent1 img {
+  #content1 #cardContent1 img {
     display: flex;
     justify-content: center;
   }
 
-  #content1 #imageCepiContent1 .card .card-body a {
-    color: black;
-  }
-
-  #content1 #imageCepiContent1 .card .card-body div a img {
+  #content1 #cardContent1 .card .card-body div a img {
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -81,20 +69,16 @@
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
-  #content1 #imageCepiContent1 .card {
+  #content1 #cardContent1 .card {
     width: 12rem;
   }
 
-  #content1 #imageCepiContent1 img {
+  #content1 #cardContent1 img {
     display: flex;
     justify-content: center;
   }
 
-  #content1 #imageCepiContent1 .card .card-body a {
-    color: black;
-  }
-
-  #content1 #imageCepiContent1 .card .card-body div a img {
+  #content1 #cardContent1 .card .card-body div a img {
     width: 1.5rem;
     height: 1.5rem;
   }
@@ -102,20 +86,12 @@
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
-  #content1 #imageCepiContent1 {
-    padding-top: 30px;
-  }
-
-  #content1 #imageCepiContent1 img {
+  #content1 #cardContent1 img {
     display: flex;
     justify-content: center;
   }
 
-  #content1 #imageCepiContent1 .card .card-body a {
-    color: black;
-  }
-
-  #content1 #imageCepiContent1 .card .card-body div a img {
+  #content1 #cardContent1 .card .card-body div a img {
     width: 1.5rem;
     height: 1.5rem;
   }

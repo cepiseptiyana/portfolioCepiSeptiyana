@@ -1,0 +1,39 @@
+#content2 #headingContent2 {
+  border-bottom: 1px solid white;
+}
+
+#content2 #headingContent2 h1 {
+  color: rgb(255, 0, 0);
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+/* ! Responsive */
+
+/* Laptop medium */
+@media only screen and (max-width: 900px) {
+  #content2 #headingContent2 {
+    padding-bottom: 30px;
+  }
+}
+
+/* ipad */
+@media only screen and (max-width: 768px) {
+  /* TEXT */
+  #content2 #headingContent2 h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* medium gadget */
+@media only screen and (max-width: 600px) {
+}
+
+/* low gadget */
+@media only screen and (max-width: 400px) {
+}
