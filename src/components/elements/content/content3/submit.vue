@@ -1,5 +1,9 @@
-<script setup></script>
+<script setup>
+let sendValueFormToWa = defineModel('sendValueFormToWa')
+</script>
 
 <template>
-  <button type="submit" class="btn btn-primary">kirim</button>
+  <button @click.stop.prevent="sendValueFormToWa" type="submit" class="btn btn-primary">
+    kirim
+  </button>
 </template>

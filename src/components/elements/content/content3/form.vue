@@ -1,50 +1,58 @@
 <script setup>
-import inputForm from './input.vue'
-import labelsForm from './label.vue'
-import submitFrom from './submit.vue'
 import heading from './heading.vue'
+import labelsForm from './label.vue'
+import inputForm from './input.vue'
+import submitFrom from './submit.vue'
 
-let { placeholderInput } = defineProps(['placeholderInput'])
+let { text } = defineProps(['text'])
+
+let sendValueFormToWa = defineModel('sendValueFormToWa')
 </script>
 
 <template>
-  <heading />
+  <heading :judulText="text.contact" />
   <form action="">
     <table>
+      <tr>
+        <td>
+          <heading :judulText="text.judulTable" />
+        </td>
+      </tr>
       <!-- R1 -->
       <tr>
         <td>
-          <labelsForm :label="placeholderInput.username" />
+          <labelsForm :label="text.placeholderUsername" />
         </td>
         <td>
-          <inputForm :placeholderInput="placeholderInput.username" />
+          <inputForm :placeholderInput="text.placeholderUsername" />
         </td>
       </tr>
 
       <!-- R2 -->
       <tr>
         <td>
-          <labelsForm :label="placeholderInput.email" />
+          <labelsForm :label="text.placeholderUseremail" />
         </td>
         <td>
-          <inputForm :placeholderInput="placeholderInput.email" />
+          <inputForm :placeholderInput="text.placeholderUseremail" />
         </td>
       </tr>
 
       <!-- R3 -->
       <tr>
         <td>
-          <labelsForm :label="placeholderInput.text" />
+          <labelsForm :label="text.placeholderUsertext" />
         </td>
         <td>
-          <inputForm :placeholderInput="placeholderInput.text" />
+          <inputForm :placeholderInput="text.placeholderUsertext" />
         </td>
       </tr>
 
       <!-- R4 -->
       <tr>
+        <td></td>
         <td>
-          <submitFrom />
+          <submitFrom :sendValueFormToWa="sendValueFormToWa" />
         </td>
       </tr>
     </table>

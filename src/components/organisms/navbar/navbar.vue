@@ -5,7 +5,7 @@ import contactNavbar from '@/components/elements/navbar/contact/contact.vue'
 
 let movingPath = {
   myProject: '#content2',
-  mySkill: '',
+  myContact: '#content3',
 }
 
 // humburger

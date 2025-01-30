@@ -3,7 +3,7 @@ import contact from '../contact/contact.vue'
 import feather from 'feather-icons'
 
 // humburger
-const align_right_icon = feather.icons['align-right'].toSvg()
+const align_right_icon = feather.icons['align-right'].toSvg({ color: 'white' })
 let humSlideShow = defineModel('humSlideShow')
 let { movingPath } = defineProps(['movingPath'])
 </script>
@@ -12,7 +12,7 @@ let { movingPath } = defineProps(['movingPath'])
     <div id="menu">
       <a href="">My Home</a>
       <a :href="movingPath.myProject">My Project</a>
-      <a :href="movingPath.mySkill">My Skill</a>
+      <a :href="movingPath.myContact">My Contact</a>
     </div>
 
     <div id="dropDown">
@@ -25,7 +25,7 @@ let { movingPath } = defineProps(['movingPath'])
       <div class="menuDropMenu">
         <a href="">My Home</a>
         <a :href="movingPath.myProject">My Project</a>
-        <a :href="movingPath.mySkill">My Skill</a>
+        <a :href="movingPath.myContact">My Contact</a>
         <contact />
       </div>
     </div>

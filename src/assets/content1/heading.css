@@ -59,6 +59,10 @@
   #content1 #headingContent1 .container h1 {
     font-size: 1.5rem;
   }
+
+  #content1 #headingContent1 p {
+    font-size: 0.8rem;
+  }
 }
 
 /* medium gadget */
