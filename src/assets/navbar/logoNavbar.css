@@ -19,7 +19,7 @@
 
 #navbar #logoNavbar a span:hover {
   text-transform: uppercase;
-  color: rgb(153, 99, 34);
+  color: rgb(0, 0, 255);
 }
 
 /* ! Responsive */
@@ -33,8 +33,9 @@
 
   /* Tag A */
   #navbar #logoNavbar a {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     letter-spacing: 2px;
+    text-overflow: clip;
   }
 }
 

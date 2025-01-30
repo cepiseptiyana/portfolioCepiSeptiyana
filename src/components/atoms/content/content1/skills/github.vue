@@ -1,5 +1,5 @@
 <script setup>
-import iconGithub from '@/assets/images/content1/iconGithub.png'
+let { iconGithub } = defineProps(['iconGithub'])
 </script>
 
 <template>

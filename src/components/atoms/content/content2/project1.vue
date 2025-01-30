@@ -1,6 +1,5 @@
 <script setup>
 let { projectCard } = defineProps(['projectCard'])
-console.log(projectCard)
 </script>
 
 <template>

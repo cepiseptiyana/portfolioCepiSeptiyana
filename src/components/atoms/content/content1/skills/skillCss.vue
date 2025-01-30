@@ -1,5 +1,5 @@
 <script setup>
-import iconCSS from '@/assets/images/content1/iconCSS.png'
+let { iconCSS } = defineProps(['iconCSS'])
 </script>
 
 <template>

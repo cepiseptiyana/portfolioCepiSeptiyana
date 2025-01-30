@@ -1,5 +1,5 @@
 <script setup>
-import iconVue from '@/assets/images/content1/iconVue.png'
+let { iconVue } = defineProps(['iconVue'])
 </script>
 
 <template>

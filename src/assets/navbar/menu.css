@@ -51,16 +51,34 @@
 
   #navbar #menuNavbar #dropDown .menuDropMenu {
     position: absolute;
-    box-shadow: 5px 10px 15px black;
-    background-color: rgba(0, 0, 0, 0.034);
-    border-top: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    padding: 0.8rem;
     top: 110%;
     width: 100%;
     left: 180%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 15px 15px black;
+    background-color: rgba(0, 0, 0, 0.451);
+    border-top: 3px solid black;
+    gap: 10px;
+    padding: 0.8rem;
     transition: 1s;
+  }
+
+  /* Menu Tag a */
+  #navbar #menuNavbar #dropDown .menuDropMenu a {
+    font-size: 0.9rem;
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px;
+    color: rgb(212, 212, 212);
+  }
+
+  #navbar #menuNavbar #dropDown .menuDropMenu a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  #navbar #menuNavbar #dropDown .menuDropMenu img {
+    width: 2.2rem;
   }
 
   /* menuDropMenu addClass toggle */
@@ -74,17 +92,6 @@
     width: 50%;
     height: 100vh;
   }
-
-  /* Menu */
-  #navbar #menuNavbar #dropDown .menuDropMenu a {
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: rgb(213, 160, 81);
-  }
-
-  #navbar #menuNavbar #dropDown .menuDropMenu a:hover {
-    color: rgb(153, 99, 34);
-  }
 }
 
 /* from medium to ipad */
@@ -97,9 +104,18 @@
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
+  /* menuDropMenu addClass toggle */
+  #navbar #menuNavbar #dropDown .menuDropMenu.width {
+    width: 70%;
+    height: 100vh;
+  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 400px) {
-  /* Tag A menuDropMenu */
+  /* menuDropMenu addClass toggle */
+  #navbar #menuNavbar #dropDown .menuDropMenu.width {
+    width: 90%;
+    height: 100vh;
+  }
 }

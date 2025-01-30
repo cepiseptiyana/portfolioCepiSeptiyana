@@ -1,5 +1,5 @@
 <script setup>
-import iconJS from '@/assets/images/content1/iconJS.png'
+let { iconJS } = defineProps(['iconJS'])
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup>
-import iconHTML from '@/assets/images/content1/iconHTML.png'
+let { iconHTML } = defineProps(['iconHTML'])
 </script>
 
 <template>

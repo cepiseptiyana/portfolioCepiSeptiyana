@@ -82,6 +82,7 @@
 @media only screen and (max-width: 539px) {
   #content1 #cardContent1 .card {
     width: 12rem;
+    margin-bottom: 50px;
   }
 }
 

@@ -1,8 +1,11 @@
 <!-- Atom -->
 <script setup>
+// Props
 let mouseOverLogoNav = defineModel('mouseOverLogoNav')
 </script>
 
 <template>
-  <a href="" @click.stop.prevent="mouseOverLogoNav">cepi septiyana</a>
+  <div id="logoNavbar">
+    <a href="" @click.stop.prevent="mouseOverLogoNav">cepi septiyana</a>
+  </div>
 </template>
