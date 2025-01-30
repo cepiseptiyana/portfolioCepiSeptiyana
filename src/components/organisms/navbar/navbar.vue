@@ -1,7 +1,7 @@
 <script setup>
-import logoHalaman from '@/components/atoms/navbar/logo/logoNavbar.vue'
-import menuNav from '@/components/atoms/navbar/menu/menu.vue'
-import contactNavbar from '@/components/atoms/navbar/contact/contact.vue'
+import logoHalaman from '@/components/elements/navbar/logo/logoNavbar.vue'
+import menuNav from '@/components/elements/navbar/menu/menu.vue'
+import contactNavbar from '@/components/elements/navbar/contact/contact.vue'
 
 let movingPath = {
   myProject: '#content2',

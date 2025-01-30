@@ -1,0 +1,52 @@
+#content3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+  box-shadow: 0px -10px 100px rgba(0, 33, 246, 0.782);
+}
+
+#content3 .container {
+  background-color: #eaea;
+  padding-top: 30px;
+}
+
+#content3 .container h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: red;
+  font-style: italic;
+  letter-spacing: 5px;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+#content3 .container form {
+  padding-top: 30px;
+}
+
+#content3 .container form table {
+  box-shadow: 0 10px 20px black;
+}
+
+#content3 .container form table tr {
+  border: 1px solid rgba(0, 0, 0, 0.282);
+}
+
+#content3 .container form table tr td {
+  padding: 10px;
+}
+
+#content3 .container form table tr td label {
+  color: white;
+  text-transform: capitalize;
+}
+
+#content3 .container form table tr td input {
+  width: 100%;
+}
+
+/* submit */
+#content3 .container form table tr td button {
+  width: 100%;
+}

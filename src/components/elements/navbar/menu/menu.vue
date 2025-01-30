@@ -1,7 +1,7 @@
 <script setup>
 import contact from '../contact/contact.vue'
-
 import feather from 'feather-icons'
+
 // humburger
 const align_right_icon = feather.icons['align-right'].toSvg()
 let humSlideShow = defineModel('humSlideShow')

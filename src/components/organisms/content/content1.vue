@@ -1,7 +1,7 @@
 <script setup>
-import heading from '@/components/atoms/content/content1/heading/heading.vue'
-import skills from '@/components/atoms/content/content1/skills/skills.vue'
-import imageCepi from '@/components/atoms/content/content1/imageCepi/imageCepi.vue'
+import heading from '@/components/elements/content/content1/heading/heading.vue'
+import skills from '@/components/elements/content/content1/skills/skills.vue'
+import imageCepi from '@/components/elements/content/content1/imageCepi/imageCepi.vue'
 
 // png:heading
 import logoWisuda from '@/assets/images/content1/logoWisuda.png'
@@ -11,6 +11,10 @@ import iconHTML from '@/assets/images/content1/iconHTML.png'
 import iconCSS from '@/assets/images/content1/iconCSS.png'
 import iconJS from '@/assets/images/content1/iconJS.png'
 import iconVue from '@/assets/images/content1/iconVue.png'
+// png:imageCepi
+import fotoCepi from '@/assets/images/content1/cepiFoto.png'
+import icongmail from '@/assets/images/content1/gmail.png'
+import iconwhatsapp from '@/assets/images/content1/whatsapp.png'
 
 let pngSkill = {
   iconGithub,
@@ -18,6 +22,12 @@ let pngSkill = {
   iconCSS,
   iconJS,
   iconVue,
+}
+
+let cardCepis = {
+  fotoCepi,
+  icongmail,
+  iconwhatsapp,
 }
 </script>
 
@@ -29,7 +39,7 @@ let pngSkill = {
         <skills :pngSkill="pngSkill" />
       </div>
       <div class="colom-2">
-        <imageCepi />
+        <imageCepi :cardCepis="cardCepis" />
       </div>
     </div>
   </div>

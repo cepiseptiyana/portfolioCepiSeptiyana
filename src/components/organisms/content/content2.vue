@@ -1,6 +1,6 @@
 <script setup>
-import heading from '@/components/molecules/content/content2/heading.vue'
-import project1 from '@/components/molecules/content/content2/project1.vue'
+import heading from '@/components/elements/content/content2/heading.vue'
+import project1 from '@/components/elements/content/content2/project1.vue'
 let { projectCard } = defineProps(['projectCard'])
 </script>
 
