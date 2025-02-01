@@ -1,10 +1,17 @@
 #content1 {
+  position: relative;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid white;
-  box-shadow: 0px -10px 100px rgba(0, 33, 246, 0.782);
+  overflow: hidden;
+  z-index: 1;
+
+  /* masukan bg-image */
+  background-image: url('../images/content1/awanBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #content1 .containerColom {
@@ -15,38 +22,184 @@
 }
 
 #content1 .containerColom .colom-1 {
+  position: relative;
+  z-index: 4;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 
+/* AWAN */
+#content1 .containerColom .colom-3 {
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  animation: 2s awanIn_1;
+}
+#content1 .containerColom .colom-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+#content1 .containerColom .colom-4 {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  animation: 2s awanIn_2;
+}
+#content1 .containerColom .colom-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+#content1 .containerColom .colom-5 {
+  position: absolute;
+  height: 90%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#content1 .containerColom .colom-5 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* GUNDAM */
+#content1 .containerColom .colom-6 {
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+  z-index: 2;
+  transform: rotate(-15deg);
+}
+
+#content1 .containerColom .colom-6 img {
+  width: 100%;
+  height: 100%;
+}
+
 /*  */
 /* ! Responsive */
-/* ipad */
-@media only screen and (max-width: 768px) {
-  #content1 .containerColom {
-    column-gap: 2rem;
+@media only screen and (max-width: 1024px) {
+  /* AWAN */
+  #content1 .containerColom .colom-3 {
+    height: 30%;
+  }
+
+  #content1 .containerColom .colom-4 {
+    width: 70%;
+    height: 50%;
+  }
+
+  #content1 .containerColom .colom-5 {
+    height: 80%;
+    left: -50%;
+  }
+
+  /* GUNDAM */
+  #content1 .containerColom .colom-6 {
+    width: 70%;
+    right: -12%;
   }
 }
 
-/* from medium to ipad */
-@media only screen and (max-width: 767px) {
-  #content1 .containerColom {
-    flex-wrap: nowrap;
+/* ipad */
+@media only screen and (max-width: 768px) {
+  /* AWAN */
+  #content1 .containerColom .colom-3 {
+    width: 70%;
+  }
+
+  #content1 .containerColom .colom-4 {
+    width: 120%;
+    height: 40%;
+    right: -30%;
+    bottom: 0;
   }
 }
 
 /* medium gadget */
-@media only screen and (max-width: 540px) {
-  #content1 {
-    height: auto;
+@media only screen and (max-width: 600px) {
+  /* AWAN */
+  #content1 .containerColom .colom-3 {
+    width: 120%;
+    height: 30%;
   }
 
-  #content1 .containerColom {
-    padding-top: 120px;
-    flex-wrap: wrap;
+  #content1 .containerColom .colom-5 {
+    height: 80%;
+    left: -80%;
+  }
+
+  /* GUNDAM */
+  #content1 .containerColom .colom-6 {
+    width: 90%;
+    right: -25%;
   }
 }
 
 /* low gadget */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
+  #content1 .containerColom .colom-5 {
+    position: absolute;
+    height: 80%;
+    left: -120%;
+  }
+
+  /* GUNDAM */
+  #content1 .containerColom .colom-6 {
+    width: 110%;
+    right: -40%;
+  }
+}
+
+/* low gadget */
+@media only screen and (max-width: 350px) {
+  /* AWAN */
+  #content1 .containerColom .colom-3 {
+    width: 120%;
+    height: 25%;
+  }
+
+  #content1 .containerColom .colom-4 {
+    width: 120%;
+    height: 35%;
+    right: -40%;
+    bottom: 0;
+  }
+
+  /* GUNDAM */
+  #content1 .containerColom .colom-6 {
+    width: 120%;
+  }
+}
+
+/* Animation */
+
+@keyframes awanIn_1 {
+  from {
+    transform: translate(-100%);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes awanIn_2 {
+  from {
+    transform: translate(100%);
+  }
+  to {
+    transform: translate(0);
+  }
 }

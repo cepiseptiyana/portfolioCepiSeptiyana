@@ -8,7 +8,6 @@
 #navbar #logoNavbar a {
   font-size: 1.2rem;
   font-style: italic;
-  color: rgb(255, 240, 217);
   letter-spacing: 5px;
   text-decoration: none;
 }
@@ -19,7 +18,7 @@
 
 #navbar #logoNavbar a span:hover {
   text-transform: uppercase;
-  color: rgb(0, 0, 255);
+  color: rgb(161, 161, 161);
 }
 
 /* ! Responsive */

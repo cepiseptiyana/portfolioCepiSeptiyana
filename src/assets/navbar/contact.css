@@ -11,14 +11,13 @@
 
 #navbar #waNavbar a {
   font-size: 0.8rem;
-  color: green;
   text-decoration: none;
   letter-spacing: 0.1rem;
   transition: 0.3s;
 }
 
 #navbar #waNavbar a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(161, 161, 161);
 }
 
 /* ! Responsive */

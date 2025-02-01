@@ -7,9 +7,14 @@
 }
 
 #content1 #skillsContent1 .headSkill h1 {
-  font-size: 1.7rem;
-  color: red;
-  text-transform: capitalize;
+  font-size: 2rem;
+  text-shadow:
+    -1px 0 white,
+    0 1px white,
+    1px 0 white,
+    0 -1px white;
+  color: deepskyblue;
+  text-transform: uppercase;
   letter-spacing: 4px;
   font-style: italic;
 }
@@ -43,7 +48,7 @@
 
 #content1 #skillsContent1 .containerElement .container h6,
 #content1 #skillsContent1 .containerElement .container h5 {
-  color: rgb(255, 240, 217);
+  color: white;
   font-size: 0.6rem;
 }
 

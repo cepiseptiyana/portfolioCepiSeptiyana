@@ -7,7 +7,7 @@ import Swal from 'sweetalert2'
 let text = {
   placeholderUsername: 'username',
   placeholderUseremail: 'email',
-  placeholderUsertext: 'text',
+  placeholderUsertext: 'komentar',
   contact: 'contact',
   judulTable: 'isi form ',
 }

@@ -4,6 +4,7 @@
   padding: 5px;
   box-shadow: 5px 5px 10px black;
   transition: 0.5s;
+  animation: 2s showIn;
 }
 
 #content1 #cardContent1 .card:hover {
@@ -96,5 +97,17 @@
   #content1 #cardContent1 .card .card-body div a img {
     width: 1.5rem;
     height: 1.5rem;
+  }
+}
+
+/* ! animation */
+@keyframes showIn {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 }

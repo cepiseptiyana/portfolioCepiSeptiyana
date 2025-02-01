@@ -1,7 +1,9 @@
 <script setup>
 import heading from '@/components/elements/content/content1/heading/heading.vue'
 import skills from '@/components/elements/content/content1/skills/skills.vue'
-import imageCepi from '@/components/elements/content/content1/imageCepi/imageCepi.vue'
+// import imageCepi from '@/components/elements/content/content1/imageCepi/imageCepi.vue'
+import awan from '@/components/elements/content/content1/awan/awan.vue'
+import robotGundam from '@/components/elements/content/content1/robot/robot.vue'
 
 // png:heading
 import logoWisuda from '@/assets/images/content1/logoWisuda.png'
@@ -15,6 +17,14 @@ import iconVue from '@/assets/images/content1/iconVue.png'
 import fotoCepi from '@/assets/images/content1/cepiFoto.png'
 import icongmail from '@/assets/images/content1/gmail.png'
 import iconwhatsapp from '@/assets/images/content1/whatsapp.png'
+// png:awan
+import awan_1 from '@/assets/images/content1/awan_1.png'
+import awan_2 from '@/assets/images/content1/awan_2.png'
+import awan_3 from '@/assets/images/content1/awan_3.png'
+// png:robot
+import gundam from '@/assets/images/content1/gundam.png'
+// png:pesawat
+import pesawat from '@/assets/images/content1/pesawat.png'
 
 let pngSkill = {
   iconGithub,
@@ -23,11 +33,15 @@ let pngSkill = {
   iconJS,
   iconVue,
 }
-
 let cardCepis = {
   fotoCepi,
   icongmail,
   iconwhatsapp,
+}
+let awanPng = {
+  awan_1,
+  awan_2,
+  awan_3,
 }
 </script>
 
@@ -35,11 +49,23 @@ let cardCepis = {
   <div id="content1" class="container-fluid">
     <div class="container containerColom">
       <div class="colom-1">
-        <heading :logoWisuda="logoWisuda" />
+        <heading />
         <skills :pngSkill="pngSkill" />
       </div>
       <div class="colom-2">
-        <imageCepi :cardCepis="cardCepis" />
+        <!-- <imageCepi :cardCepis="cardCepis" /> -->
+      </div>
+      <div class="colom-3">
+        <awan :awanPng="awanPng.awan_1" />
+      </div>
+      <div class="colom-4">
+        <awan :awanPng="awanPng.awan_2" />
+      </div>
+      <div class="colom-5">
+        <awan :awanPng="awanPng.awan_3" />
+      </div>
+      <div class="colom-6">
+        <robotGundam :gundam="gundam" />
       </div>
     </div>
   </div>

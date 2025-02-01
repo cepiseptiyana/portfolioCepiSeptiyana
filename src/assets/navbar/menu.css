@@ -1,6 +1,5 @@
 /* Container menuNavbar */
 #navbar #menuNavbar {
-  /* background-color: rgb(8, 0, 255); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +17,11 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgb(255, 240, 217);
   transition: 0.3s;
 }
 
 #navbar #menuNavbar #menu a:hover {
-  color: rgb(0, 0, 255);
+  color: rgb(161, 161, 161);
 }
 
 /* dropDown */
