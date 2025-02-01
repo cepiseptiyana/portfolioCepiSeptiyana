@@ -1,30 +1,21 @@
 <script setup>
 import heading from '@/components/elements/content/content1/heading/heading.vue'
 import skills from '@/components/elements/content/content1/skills/skills.vue'
-// import imageCepi from '@/components/elements/content/content1/imageCepi/imageCepi.vue'
 import awan from '@/components/elements/content/content1/awan/awan.vue'
 import robotGundam from '@/components/elements/content/content1/robot/robot.vue'
 
-// png:heading
-import logoWisuda from '@/assets/images/content1/logoWisuda.png'
 // png:skill
 import iconGithub from '@/assets/images/content1/iconGithub.png'
 import iconHTML from '@/assets/images/content1/iconHTML.png'
 import iconCSS from '@/assets/images/content1/iconCSS.png'
 import iconJS from '@/assets/images/content1/iconJS.png'
 import iconVue from '@/assets/images/content1/iconVue.png'
-// png:imageCepi
-import fotoCepi from '@/assets/images/content1/cepiFoto.png'
-import icongmail from '@/assets/images/content1/gmail.png'
-import iconwhatsapp from '@/assets/images/content1/whatsapp.png'
 // png:awan
 import awan_1 from '@/assets/images/content1/awan_1.png'
 import awan_2 from '@/assets/images/content1/awan_2.png'
 import awan_3 from '@/assets/images/content1/awan_3.png'
 // png:robot
 import gundam from '@/assets/images/content1/gundam.png'
-// png:pesawat
-import pesawat from '@/assets/images/content1/pesawat.png'
 
 let pngSkill = {
   iconGithub,
@@ -32,11 +23,6 @@ let pngSkill = {
   iconCSS,
   iconJS,
   iconVue,
-}
-let cardCepis = {
-  fotoCepi,
-  icongmail,
-  iconwhatsapp,
 }
 let awanPng = {
   awan_1,

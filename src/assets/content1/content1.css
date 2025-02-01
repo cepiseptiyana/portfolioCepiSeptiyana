@@ -88,7 +88,6 @@
   height: 100%;
 }
 
-/*  */
 /* ! Responsive */
 @media only screen and (max-width: 1024px) {
   /* AWAN */
@@ -184,8 +183,7 @@
   }
 }
 
-/* Animation */
-
+/* ! Animation */
 @keyframes awanIn_1 {
   from {
     transform: translate(-100%);
@@ -201,5 +199,18 @@
   }
   to {
     transform: translate(0);
+  }
+}
+
+/* ! parallax */
+/* ! animation */
+@keyframes showIn {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
   }
 }

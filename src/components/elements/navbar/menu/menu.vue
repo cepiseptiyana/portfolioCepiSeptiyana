@@ -3,7 +3,7 @@ import contact from '../contact/contact.vue'
 import feather from 'feather-icons'
 
 // humburger
-const align_right_icon = feather.icons['align-right'].toSvg({ color: 'white' })
+const align_right_icon = feather.icons['align-right'].toSvg({ color: '#0dcaf0' })
 let humSlideShow = defineModel('humSlideShow')
 let { movingPath } = defineProps(['movingPath'])
 </script>

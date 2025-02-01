@@ -7,12 +7,8 @@
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #navbar .row .col-md:nth-child(2) {
-    order: 3;
-  }
-
   #navbar .row .col-md:nth-child(3) {
-    order: 2;
+    display: none;
   }
 }
 
