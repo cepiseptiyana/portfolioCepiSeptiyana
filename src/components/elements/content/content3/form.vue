@@ -4,13 +4,11 @@ import labelsForm from './label.vue'
 import inputForm from './input.vue'
 import submitFrom from './submit.vue'
 
-let { text } = defineProps(['text'])
-
 let sendValueFormToWa = defineModel('sendValueFormToWa')
+let { text } = defineProps(['text'])
 </script>
 
 <template>
-  <heading :judulText="text.contact" />
   <form action="">
     <table>
       <tr>

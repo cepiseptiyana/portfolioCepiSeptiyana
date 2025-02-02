@@ -8,7 +8,7 @@ let { projectCard } = defineProps(['projectCard'])
       <img :src="image.image" alt="" />
       <div class="card-body">
         <h6 class="card-title text-center">{{ image.judul }}</h6>
-        <a :href="image.link">open Web</a>
+        <a :href="image.link" target="_blank">open Web</a>
       </div>
     </div>
   </div>

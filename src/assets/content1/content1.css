@@ -18,11 +18,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   column-gap: 1rem;
 }
 
 #content1 .containerColom .colom-1 {
   position: relative;
+  text-align: center;
   z-index: 4;
   border-top: 1px solid rgb(255, 255, 255);
   border-bottom: 1px solid rgb(255, 255, 255);

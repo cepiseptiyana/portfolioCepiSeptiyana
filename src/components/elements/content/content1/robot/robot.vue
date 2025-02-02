@@ -1,6 +1,5 @@
 <script setup>
 let { gundam } = defineProps(['gundam'])
-console.log(gundam)
 </script>
 
 <template>

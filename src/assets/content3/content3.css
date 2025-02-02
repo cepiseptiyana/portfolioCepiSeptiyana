@@ -1,21 +1,26 @@
 #content3 {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #content3 .container {
-  padding-top: 30px;
+  width: 70%;
 }
 
 #content3 .container h1 {
+  font-size: 2rem;
+  text-shadow:
+    -1px 0 blue,
+    0 1px blue,
+    1px 0 blue,
+    0 -1px blue;
+  color: deepskyblue;
   text-transform: uppercase;
-  text-align: center;
-  color: red;
+  letter-spacing: 4px;
   font-style: italic;
-  letter-spacing: 5px;
-  border-bottom: 1px solid white;
-  padding-bottom: 30px;
+  text-align: center;
 }
 
 #content3 .container form {
@@ -38,9 +43,13 @@
 }
 
 #content3 .container form table tr td label {
-  color: white;
   font-size: 1rem;
-  text-transform: capitalize;
+  text-shadow:
+    -1px 0 blue,
+    0 1px blue,
+    1px 0 blue,
+    0 -1px blue;
+  color: deepskyblue;
 }
 
 #content3 .container form table tr td input {
@@ -54,6 +63,10 @@
 
 /* ipad */
 @media only screen and (max-width: 768px) {
+  #content3 .container {
+    width: 80%;
+  }
+
   #content3 .container form table {
     width: 100%;
     box-shadow: 0 10px 20px black;
@@ -71,6 +84,12 @@
 
   #content3 .container form table tr td button {
     font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #content3 .container {
     width: 100%;
   }
 }
