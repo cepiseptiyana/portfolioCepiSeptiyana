@@ -9,6 +9,17 @@
 }
 
 body {
-  /* background: linear-gradient(to bottom right, rgb(0, 0, 148), black); */
   background-repeat: no-repeat;
 }
+
+/* body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: deepskyblue;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+} */

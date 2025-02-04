@@ -15,7 +15,7 @@ import iconJS from '@/assets/images/content1/iconJS.png'
 import iconVue from '@/assets/images/content1/iconVue.png'
 // png:awan
 import awan_1 from '@/assets/images/content1/awan_1.png'
-import awan_2 from '@/assets/images/content1/awan_2.png'
+import awan_2 from '@/assets/images/content1/awan2.png'
 import awan_3 from '@/assets/images/content1/awan_3.png'
 // png:robot
 import gundam from '@/assets/images/content1/gundam.png'

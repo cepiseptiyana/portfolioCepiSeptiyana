@@ -1,10 +1,9 @@
 #content2 {
-  border-bottom: 1px solid white;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* box-shadow: 0px 15px 50px rgba(0, 33, 246, 0.782); */
+  flex-direction: column;
 
   /* masukan bg-image */
   background-image: url('../images/content1/awanBG.jpg');
@@ -13,30 +12,24 @@
 }
 
 #content2 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1rem;
+  width: 60%;
 }
 
-/*  */
 /* ! Responsive */
 /* ipad */
 @media only screen and (max-width: 768px) {
   #content2 .container {
-    flex-direction: column;
-    row-gap: 1rem;
+    width: 70%;
   }
-}
 
-/* from medium to ipad */
-@media only screen and (max-width: 767px) {
+  #content2 div:nth-child(3) {
+    display: none;
+  }
 }
 
 /* medium gadget */
 @media only screen and (max-width: 600px) {
-}
-
-/* low gadget */
-@media only screen and (max-width: 400px) {
+  #content2 .container {
+    width: 95%;
+  }
 }
