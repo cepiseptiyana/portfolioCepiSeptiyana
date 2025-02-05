@@ -1,6 +1,5 @@
 #content1 #headingContent1 {
   display: block;
-  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #content1 #headingContent1 {
@@ -16,6 +15,12 @@
 } */
 
 #content1 #headingContent1 h1 {
+  color: rgb(213, 31, 31);
+  text-shadow:
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 -1px 0 white,
+    0 1px 0 white;
   font-style: italic;
   font-size: 2rem;
   font-weight: bold;
@@ -26,6 +31,12 @@
 }
 
 #content1 #headingContent1 p {
+  color: rgb(168, 6, 168);
+  text-shadow:
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 -1px 0 white,
+    0 1px 0 white;
   text-align: center;
   font-size: 1.5rem;
 }

@@ -3,5 +3,5 @@ let { label } = defineProps(['label'])
 </script>
 
 <template>
-  <label v-html="label" :for="label"></label>
+  <label :for="label" class="text-secondary">{{ label }}</label>
 </template>

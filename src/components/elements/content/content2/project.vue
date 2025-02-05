@@ -11,7 +11,7 @@ let { projectCard } = defineProps(['projectCard'])
       </div>
 
       <div class="imgProject">
-        <a href="">
+        <a :href="item.link">
           <img :src="item.image" alt="" title="Go To Web" />
         </a>
       </div>

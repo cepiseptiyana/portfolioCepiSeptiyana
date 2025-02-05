@@ -2,5 +2,5 @@
 let { cepiFoto } = defineProps(['cepiFoto'])
 </script>
 <template>
-  <img :src="cepiFoto" alt="" />
+  <img class="cepiImg" :src="cepiFoto" alt="" />
 </template>

@@ -9,50 +9,26 @@ let { text } = defineProps(['text'])
 </script>
 
 <template>
-  <form action="">
-    <table>
-      <tr>
-        <td>
-          <heading :judulText="text.judulTable" />
-        </td>
-      </tr>
-      <!-- R1 -->
-      <tr>
-        <td>
-          <labelsForm :label="text.placeholderUsername" />
-        </td>
-        <td>
-          <inputForm :placeholderInput="text.placeholderUsername" />
-        </td>
-      </tr>
-
-      <!-- R2 -->
-      <tr>
-        <td>
-          <labelsForm :label="text.placeholderUseremail" />
-        </td>
-        <td>
-          <inputForm :placeholderInput="text.placeholderUseremail" />
-        </td>
-      </tr>
-
-      <!-- R3 -->
-      <tr>
-        <td>
-          <labelsForm :label="text.placeholderUsertext" />
-        </td>
-        <td>
-          <inputForm :placeholderInput="text.placeholderUsertext" />
-        </td>
-      </tr>
-
-      <!-- R4 -->
-      <tr>
-        <td></td>
-        <td>
-          <submitFrom :sendValueFormToWa="sendValueFormToWa" />
-        </td>
-      </tr>
-    </table>
+  <form action="" class="formContact">
+    <div class="headForm">
+      <heading :judulText="text.contact" />
+    </div>
+    <!-- R1 -->
+    <div class="input">
+      <labelsForm :label="text.placeholderUsername" />
+      <inputForm :placeholderInput="text.placeholderUsername" />
+    </div>
+    <!-- R2 -->
+    <div class="input">
+      <labelsForm :label="text.placeholderUseremail" />
+      <inputForm :placeholderInput="text.placeholderUseremail" />
+    </div>
+    <!-- R3 -->
+    <div class="input">
+      <labelsForm :label="text.placeholderUsertext" />
+      <inputForm :placeholderInput="text.placeholderUsertext" />
+    </div>
+    <!-- R4 -->
+    <submitFrom :sendValueFormToWa="sendValueFormToWa" />
   </form>
 </template>

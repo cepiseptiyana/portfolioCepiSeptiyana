@@ -3,93 +3,116 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  --size: 12px;
 }
 
 #content3 .container {
-  width: 70%;
+  box-shadow: 0 0 5px black;
+  width: 80%;
 }
 
-#content3 .container h1 {
-  font-size: 2rem;
-  text-shadow:
-    -1px 0 blue,
-    0 1px blue,
-    1px 0 blue,
-    0 -1px blue;
-  color: deepskyblue;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  font-style: italic;
-  text-align: center;
+#content3 .container .row {
+  gap: var(--size);
 }
 
-#content3 .container form {
+#content3 .container .row .col-md {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#content3 .container .row .col-md:nth-child(1) {
+  height: 70vh;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  text-transform: capitalize;
+}
+#content3 .container .row .col-md:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#content3 .container form table {
-  width: 80%;
-  box-shadow: 0 10px 20px black;
+#content3 .container .row .paragraph {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1.2px;
 }
 
-#content3 .container form table tr {
-  border: 1px solid rgba(0, 0, 0, 0.282);
+/* Form */
+#content3 .container .row .judulForm {
+  color: rgb(255, 255, 255);
 }
 
-#content3 .container form table tr td {
-  padding: 10px;
+#content3 .container .row .formContact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size);
+  flex-direction: column;
 }
 
-#content3 .container form table tr td label {
-  font-size: 1rem;
+#content3 .container .row .formContact .judulForm {
+  color: rgb(213, 31, 31);
   text-shadow:
-    -1px 0 blue,
-    0 1px blue,
-    1px 0 blue,
-    0 -1px blue;
-  color: deepskyblue;
+    -1px 0 0 white,
+    1px 0 0 white,
+    0 -1px 0 white,
+    0 1px 0 white;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.1rem;
 }
 
-#content3 .container form table tr td input {
+#content3 .container .row .formContact .input {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
-/* submit */
-#content3 .container form table tr td button {
-  width: 100%;
+#content3 .container .row .formContact .input input {
+  height: 3vmax;
 }
 
-/* ipad */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  #content3 {
+    height: auto;
+  }
+
   #content3 .container {
+    width: 90%;
+    margin: 0;
+  }
+
+  #content3 .container .row .col-md:nth-child(1) {
+    height: 50vh;
+  }
+
+  #content3 .container .row .col-md:nth-child(2) {
+    height: 50vh;
+  }
+
+  #content3 .container .row .formContact .input {
+    display: flex;
+    flex-direction: column;
     width: 80%;
   }
 
-  #content3 .container form table {
-    width: 100%;
-    box-shadow: 0 10px 20px black;
-  }
-
-  /* Label font */
-  #content3 .container form table tr td label {
-    font-size: 0.8rem;
-  }
-
-  /* Input font */
-  #content3 .container form table tr td input {
-    font-size: 0.8rem;
-  }
-
-  #content3 .container form table tr td button {
-    font-size: 0.8rem;
-    width: 100%;
+  #content3 .container .row .formContact .input input {
+    height: 4vmax;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   #content3 .container {
     width: 100%;
+    font-size: var(--size);
   }
 }
