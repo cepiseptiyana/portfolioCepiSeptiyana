@@ -15,12 +15,6 @@
   gap: var(--size);
 }
 
-#content3 .container .row .col-md {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-sizing: border-box;
-}
-
 #content3 .container .row .col-md:nth-child(1) {
   height: 70vh;
   display: flex;
