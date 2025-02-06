@@ -10,11 +10,11 @@
 }
 
 #content2 .container::-webkit-scrollbar-track {
-  background-color: deepskyblue;
+  background-color: rgb(0, 0, 0);
 }
 
 #content2 .container::-webkit-scrollbar-thumb {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 #content2 .container::-webkit-scrollbar-thumb:hover {
@@ -22,7 +22,7 @@
 }
 
 #content2 .container .dataProject {
-  width: 200%;
+  width: 100%;
   gap: 1rem;
   flex-shrink: 0;
   display: flex;
@@ -30,9 +30,7 @@
 
 /* text */
 #content2 .container .dataProject .textProject {
-  border-radius: 2rem;
   border: 2px solid white;
-  background-color: deepskyblue;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -60,7 +58,7 @@
 }
 
 #content2 .container .dataProject .textProject p {
-  font-size: 1.2vmax;
+  font-size: 1.5vmax;
   color: white;
 }
 
@@ -69,17 +67,38 @@
   width: 100%;
 }
 
-#content2 .container .dataProject .imgProject a {
-  display: block;
-}
-
 #content2 .container .dataProject .imgProject a img {
-  border: 2px solid white;
-  border-radius: 2rem;
+  border: 3px solid rgb(0, 0, 0);
   width: 100%;
 }
 
 /* ! Responsive */
+
+/* Laptop medium */
+@media only screen and (max-width: 992px) {
+  #content2 .container .dataProject {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+  }
+
+  #content2 .container .dataProject .textProject {
+    height: 40vh;
+  }
+
+  /* TEXT */
+  #content2 .container .dataProject .textProject h1 {
+    font-size: 4.5vmax;
+    word-wrap: break-word;
+  }
+
+  #content2 .container .dataProject .textProject p {
+    font-size: 1.8vmax;
+    word-wrap: break-word;
+  }
+}
+
 /* ipad */
 @media only screen and (max-width: 768px) {
   /* TEXT */
@@ -87,16 +106,15 @@
     font-size: 4vmax;
     word-wrap: break-word;
   }
-
-  #content2 .container .dataProject .textProject p {
-    font-size: 2vmax;
-    word-wrap: break-word;
-  }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
+  #content2 .container .dataProject .textProject {
+    height: 50vh;
+  }
+
   #content2 .container .dataProject .textProject p {
-    font-size: 1.5vmax;
+    font-size: 1.8vmax;
     word-wrap: break-word;
   }
 }

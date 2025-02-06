@@ -6,6 +6,6 @@ let mouseOverLogoNav = defineModel('mouseOverLogoNav')
 
 <template>
   <div id="logoNavbar">
-    <a href="" @click.stop.prevent="mouseOverLogoNav">cepi septiyana</a>
+    <a class="text-warning" href="" @click.stop.prevent="mouseOverLogoNav">cepi septiyana</a>
   </div>
 </template>

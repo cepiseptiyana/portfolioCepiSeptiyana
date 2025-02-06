@@ -12,12 +12,8 @@
 #navbar #waNavbar a {
   font-size: 0.8rem;
   text-decoration: none;
-  letter-spacing: 0.1rem;
   transition: 0.3s;
-}
-
-#navbar #waNavbar a:hover {
-  color: deepskyblue;
+  letter-spacing: 0.2rem;
 }
 
 /* ! Responsive */

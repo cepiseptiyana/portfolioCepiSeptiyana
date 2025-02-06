@@ -6,17 +6,12 @@
   --size: 12px;
 }
 
-#content3 .container {
-  box-shadow: 0 0 5px black;
-  width: 80%;
-}
-
 #content3 .container .row {
+  padding: 2vmax;
   gap: var(--size);
 }
 
 #content3 .container .row .col-md:nth-child(1) {
-  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,17 +25,19 @@
   align-items: center;
 }
 
+#content3 .container .row .judulForm {
+  text-transform: capitalize;
+  font-size: 3.5vmax;
+}
+
 #content3 .container .row .paragraph {
-  color: rgb(255, 255, 255);
+  font-size: 1vmax;
   letter-spacing: 1.2px;
 }
 
 /* Form */
-#content3 .container .row .judulForm {
-  color: rgb(255, 255, 255);
-}
-
 #content3 .container .row .formContact {
+  padding: 4vmax 0;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -50,28 +47,22 @@
 }
 
 #content3 .container .row .formContact .judulForm {
-  color: rgb(213, 31, 31);
-  text-shadow:
-    -1px 0 0 white,
-    1px 0 0 white,
-    0 -1px 0 white,
-    0 1px 0 white;
   font-style: italic;
   font-size: 2rem;
   font-weight: bold;
-  width: 100%;
   text-transform: uppercase;
-  text-align: center;
   letter-spacing: 0.1rem;
 }
 
 #content3 .container .row .formContact .input {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
 }
 
 #content3 .container .row .formContact .input input {
+  padding: 1rem;
+  box-sizing: border-box;
   height: 3vmax;
 }
 
@@ -81,7 +72,7 @@
   }
 
   #content3 .container {
-    width: 90%;
+    width: 100%;
     margin: 0;
   }
 
@@ -89,14 +80,21 @@
     height: 50vh;
   }
 
+  #content3 .container .row .paragraph {
+    font-size: 1.5vmax;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1.2px;
+  }
+
   #content3 .container .row .col-md:nth-child(2) {
+    padding: 2rem;
     height: 50vh;
   }
 
   #content3 .container .row .formContact .input {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
   }
 
   #content3 .container .row .formContact .input input {

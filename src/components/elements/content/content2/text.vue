@@ -4,6 +4,6 @@ let { textProjectValue } = defineProps(['textProjectValue'])
 
 <template>
   <div class="text">
-    <h1>{{ textProjectValue }}</h1>
+    <h1 class="text-dark">{{ textProjectValue }}</h1>
   </div>
 </template>

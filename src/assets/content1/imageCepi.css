@@ -1,7 +1,6 @@
 #content1 .containerColom .colom-1 .cepiImg {
-  background-color: rgba(255, 255, 255, 0.434);
   border: 2px solid white;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 120px;
 }
 

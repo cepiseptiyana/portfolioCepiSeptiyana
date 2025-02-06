@@ -5,7 +5,7 @@ let { projectCard } = defineProps(['projectCard'])
 <template>
   <div class="container">
     <div class="dataProject" v-for="item in projectCard">
-      <div class="textProject">
+      <div class="textProject bg-dark">
         <h1>{{ item.judul }}</h1>
         <p>{{ item.desc }}</p>
       </div>

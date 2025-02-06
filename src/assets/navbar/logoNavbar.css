@@ -6,19 +6,18 @@
 }
 
 #navbar #logoNavbar a {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-style: italic;
   letter-spacing: 5px;
   text-decoration: none;
 }
 
 #navbar #logoNavbar a span {
-  transition: 2s;
+  transition: 0.3s;
 }
 
 #navbar #logoNavbar a span:hover {
-  text-transform: uppercase;
-  color: deepskyblue;
+  color: rgb(255, 255, 255);
 }
 
 /* ! Responsive */

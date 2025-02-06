@@ -4,13 +4,8 @@
 }
 
 #content2 .text > h1 {
-  font-size: 3vmax;
-  text-shadow:
-    -1px 0 rgb(0, 72, 255),
-    0 1px rgb(0, 72, 255),
-    1px 0 rgb(0, 72, 255),
-    0 -1px rgb(0, 72, 255);
-  color: deepskyblue;
+  font-size: 5vmax;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-style: italic;

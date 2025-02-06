@@ -20,10 +20,6 @@
   transition: 0.3s;
 }
 
-#navbar #menuNavbar #menu a:hover {
-  color: deepskyblue;
-}
-
 /* dropDown */
 #navbar #menuNavbar #dropDown {
   display: none;

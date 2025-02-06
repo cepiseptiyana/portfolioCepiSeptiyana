@@ -1,7 +1,6 @@
 <script setup>
 import logoHalaman from '@/components/elements/navbar/logo/logoNavbar.vue'
 import menuNav from '@/components/elements/navbar/menu/menu.vue'
-import contactNavbar from '@/components/elements/navbar/contact/contact.vue'
 
 let movingPath = {
   myProject: '#content2',
@@ -38,9 +37,6 @@ function mouseOverLogoNav() {
         </div>
         <div class="col-md">
           <menuNav :movingPath="movingPath" :humSlideShow="humSlideShow" />
-        </div>
-        <div class="col-md">
-          <contactNavbar />
         </div>
       </div>
     </div>
