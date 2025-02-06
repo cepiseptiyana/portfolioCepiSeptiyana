@@ -22,9 +22,9 @@ let pngSkill = {
 </script>
 
 <template>
-  <div id="content1" class="container-fluid">
+  <div id="content1" class="container-fluid bg-dark">
     <div class="container containerColom bg-secondary">
-      <div class="colom-1">
+      <div class="colom-1 bg-dark">
         <heading />
         <imgCepi :cepiFoto="cepiFoto" />
         <skills :pngSkill="pngSkill" />

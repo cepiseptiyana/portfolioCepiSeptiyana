@@ -26,6 +26,7 @@
 }
 
 #content3 .container .row .judulForm {
+  color: #343a40;
   text-transform: capitalize;
   font-size: 3.5vmax;
 }
@@ -47,6 +48,7 @@
 }
 
 #content3 .container .row .formContact .judulForm {
+  color: #292b2c;
   font-style: italic;
   font-size: 2rem;
   font-weight: bold;

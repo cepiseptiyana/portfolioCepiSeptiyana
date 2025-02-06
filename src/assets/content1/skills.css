@@ -7,12 +7,8 @@
 }
 
 #content1 #skillsContent1 .headSkill h1 {
+  color: white;
   font-size: 3vmax;
-  text-shadow:
-    -1px 0 white,
-    0 1px white,
-    1px 0 white,
-    0 -1px white;
   text-transform: uppercase;
   letter-spacing: 1vmax;
   font-weight: bold;
@@ -74,5 +70,17 @@
 
   #content1 #skillsContent1 .containerElement .container {
     padding: 0;
+  }
+}
+
+/* low gadget */
+@media only screen and (max-width: 250px) {
+  #content1 #skillsContent1 .containerElement {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #content1 #skillsContent1 .containerElement .container {
+    width: 40%;
   }
 }

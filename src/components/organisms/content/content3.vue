@@ -74,7 +74,7 @@ function sendValueFormToWa() {
   <div id="content3" class="container-fluid">
     <div class="container">
       <div class="row bg-secondary-subtle">
-        <div class="col-md bg-secondary">
+        <div class="col-md bg-dark">
           <heading judulText="Let's chat" />
           <Paragraph :text="text.paragraph" />
         </div>

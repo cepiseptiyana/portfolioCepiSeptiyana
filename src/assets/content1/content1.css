@@ -10,7 +10,7 @@
 }
 
 #content1 .containerColom {
-  border-radius: 1vmax;
+  border-top-left-radius: 1rem;
   padding: 2vmax;
   box-sizing: border-box;
   display: flex;
@@ -21,6 +21,10 @@
 }
 
 #content1 .containerColom .colom-1 {
+  width: 50vw;
+  border-top-left-radius: 1rem;
+  box-sizing: border-box;
+  padding: 2rem 0;
   position: relative;
   text-align: center;
   z-index: 4;
@@ -35,11 +39,17 @@
 }
 
 /* medium gadget */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
+  #content1 .containerColom .colom-1 {
+    width: 70vw;
+  }
 }
 
 /* low gadget */
 @media only screen and (max-width: 450px) {
+  #content1 .containerColom .colom-1 {
+    width: auto;
+  }
 }
 
 /* low gadget */
