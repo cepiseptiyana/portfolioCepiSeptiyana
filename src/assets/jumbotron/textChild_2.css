@@ -1,0 +1,35 @@
+@font-face {
+  font-family: FontTextChild2;
+  src: url(../GoogleFont/RobotoCondensed-Black.ttf);
+}
+
+.jumbotron .container div:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron .container .container div:nth-child(2) h1 {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-size: 12vmax;
+  font-weight: bold;
+  font-family: FontTextChild2;
+}
+
+@media screen and (max-width: 576px) {
+  .jumbotron .container .container div:nth-child(2) h1 {
+    font-size: 11vmax;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron .container .container div:nth-child(2) h1 {
+    font-size: 9vmax;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron .container .container div:nth-child(2) h1 {
+    font-size: 7vmax;
+  }
+}

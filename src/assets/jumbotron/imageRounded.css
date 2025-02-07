@@ -1,0 +1,21 @@
+.jumbotron .container .container div:nth-child(5) {
+  position: absolute;
+  right: 50%;
+  width: 30%;
+}
+
+.jumbotron .container .container div:nth-child(5) img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .container .container div:nth-child(5) {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .jumbotron .container .container div:nth-child(5) {
+    width: 55%;
+  }
+}

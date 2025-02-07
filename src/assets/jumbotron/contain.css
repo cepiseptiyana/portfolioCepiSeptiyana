@@ -1,0 +1,29 @@
+.jumbotron {
+  position: relative;
+  font-size: 12;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron .container .container {
+  position: relative;
+  padding: 0.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .container .container {
+    padding: 12vmax 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron .container .container {
+    padding: 15vmax 0;
+  }
+}

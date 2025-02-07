@@ -1,0 +1,25 @@
+@font-face {
+  font-family: FontTextChild3;
+  src: url(../GoogleFont/DancingScript-Bold.ttf);
+}
+
+/* .jumbotron .container div:nth-child(2) {
+  } */
+
+.jumbotron .container .container div:nth-child(3) h1 {
+  position: relative;
+  color: rgb(255, 60, 0);
+  text-transform: uppercase;
+  font-size: 5vmax;
+  font-weight: bold;
+  font-family: FontTextChild3;
+  margin-top: -6vw;
+  transform: rotateZ(-5deg);
+  z-index: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron .container .container div:nth-child(3) h1 {
+    font-size: 3vmax;
+  }
+}

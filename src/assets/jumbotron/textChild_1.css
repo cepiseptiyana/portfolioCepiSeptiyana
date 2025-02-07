@@ -1,0 +1,32 @@
+.jumbotron .container .container div:nth-child(1) {
+  position: relative;
+  border-radius: 2rem;
+  z-index: 1;
+}
+
+.jumbotron .container .container div:nth-child(1) h1 {
+  background: linear-gradient(to bottom right, Crimson, Brown);
+  box-shadow: 0 0 0 5px #ffc107;
+  border-radius: 2rem;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+  font-size: 1vmax;
+  padding: 0.5rem 4vmax;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron .container .container div:nth-child(1) h1 {
+    font-size: 1.5vmax;
+    font-weight: bold;
+    padding: 0.5rem 5vmax;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .jumbotron .container .container div:nth-child(1) h1 {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0.3rem 3vmax;
+  }
+}
