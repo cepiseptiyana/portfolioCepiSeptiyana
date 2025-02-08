@@ -1,5 +1,6 @@
 #content2 .container {
   display: flex;
+  justify-content: start;
   gap: 1rem;
   overflow-x: scroll;
   padding: 0;

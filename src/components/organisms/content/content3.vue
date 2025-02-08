@@ -71,7 +71,7 @@ function sendValueFormToWa() {
 </script>
 
 <template>
-  <div id="content3" class="container-fluid">
+  <div id="content3" class="bg-light">
     <div class="container">
       <div class="row bg-secondary-subtle">
         <div class="col-md bg-dark">

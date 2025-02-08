@@ -1,27 +1,38 @@
+@font-face {
+  font-family: FontTextChild2;
+  src: url(../GoogleFont/RobotoCondensed-Black.ttf);
+}
+
 #content1 #skillsContent1 {
+  background-color: #ffc107;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding-top: 20px;
+  padding: 5px;
+  z-index: 1;
 }
 
 #content1 #skillsContent1 .headSkill h1 {
   color: white;
   font-size: 3vmax;
+  font-family: FontTextChild2;
   text-transform: uppercase;
   letter-spacing: 1vmax;
   font-weight: bold;
-  font-style: italic;
 }
 
 #content1 #skillsContent1 .containerElement {
   display: flex;
-  gap: 0.2rem;
+  gap: 0.5rem;
 }
 
 #content1 #skillsContent1 .containerElement .container {
+  background-color: white;
+  padding: 0.6vmax 1vmax;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -29,8 +40,10 @@
 /* text */
 #content1 #skillsContent1 .containerElement .container h6,
 #content1 #skillsContent1 .containerElement .container h5 {
-  color: white;
-  font-size: 0.7rem;
+  margin: 0;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 0.7vmax;
 }
 
 #content1 #skillsContent1 .containerElement .container img {
@@ -53,7 +66,7 @@
 @media only screen and (max-width: 768px) {
   #content1 #skillsContent1 .containerElement .container h6,
   #content1 #skillsContent1 .containerElement .container h5 {
-    font-size: 0.5rem;
+    font-size: 1vmax;
   }
 }
 
