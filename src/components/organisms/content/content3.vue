@@ -73,7 +73,7 @@ function sendValueFormToWa() {
 <template>
   <div id="content3" class="bg-light">
     <div class="container">
-      <div class="row bg-secondary-subtle">
+      <div class="row">
         <div class="col-md bg-dark">
           <heading judulText="Let's chat" />
           <Paragraph :text="text.paragraph" />

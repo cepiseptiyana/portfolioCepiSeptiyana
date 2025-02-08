@@ -20,19 +20,21 @@ let pngSkill = {
   iconJS,
   iconVue,
 }
+
+let aboutMeText = {
+  head: 'about me',
+  paragraph:
+    "My name is Cepi Septiyana. People usually call me Cepi. I'm 23 years old and I was born in Tangerang, on 19th September, 2001. I live in Tangerang since I was child and now I study in Universitas Terbuka Semester 7",
+}
 </script>
 
 <template>
   <div id="content1" class="container-fluid bg-light">
     <div class="container containerColom bg-dark-subtle">
       <div class="elementPp_1 bg-dark">
-        <p class="text-warning">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perspiciatis nostrum
-          praesentium fugiat eligendi vero exercitationem, velit, eius sint adipisci, facilis sunt
-          nihil veritatis omnis dignissimos! Dolores autem deserunt voluptates?
-        </p>
+        <aboutMe :aboutText="aboutMeText" />
       </div>
-      <div class="colom-1 bg-body-secondary">
+      <div class="colom-1 bg-dark">
         <heading />
         <imgCepi :cepiFoto="cepiFoto" />
         <skills :pngSkill="pngSkill" />

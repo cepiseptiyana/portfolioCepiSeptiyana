@@ -4,10 +4,10 @@
   justify-content: center;
   align-items: center;
   --size: 12px;
+  padding: 2vmax;
 }
 
 #content3 .container .row {
-  padding: 2vmax;
   gap: var(--size);
 }
 
@@ -74,7 +74,7 @@
   }
 
   #content3 .container {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
   }
 
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 425px) {
   #content3 .container {
-    width: 100%;
+    /* width: 100%; */
     font-size: var(--size);
   }
 }

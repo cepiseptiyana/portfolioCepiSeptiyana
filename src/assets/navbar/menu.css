@@ -1,3 +1,8 @@
+@font-face {
+  font-family: textNavbarDropDown;
+  src: url(../GoogleFont/DancingScript-Bold.ttf);
+}
+
 /* Container menuNavbar */
 #navbar #menuNavbar {
   display: flex;
@@ -62,9 +67,11 @@
   #navbar #menuNavbar #dropDown .menuDropMenu a {
     font-size: 0.9rem;
     text-decoration: none;
-    background-color: blue;
+    background-color: #ffc107;
     padding: 10px;
-    color: rgb(212, 212, 212);
+    color: #212529;
+    font-family: textNavbarDropDown;
+    font-size: 2.5vmax;
   }
 
   #navbar #menuNavbar #dropDown .menuDropMenu a:hover {

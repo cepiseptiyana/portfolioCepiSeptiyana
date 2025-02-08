@@ -3,8 +3,17 @@
   src: url(../GoogleFont/RobotoCondensed-Black.ttf);
 }
 
+#content1 .containerColom .colom-1 {
+  /* width: 100%; */
+  flex: 1;
+  padding: 2vmax 1.2vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2vmax;
+}
+
 #content1 #skillsContent1 {
-  background-color: #ffc107;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -14,13 +23,22 @@
   z-index: 1;
 }
 
+#content1 #skillsContent1 .headSkill {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border-top-left-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+}
+
 #content1 #skillsContent1 .headSkill h1 {
-  color: white;
+  color: #212529;
   font-size: 3vmax;
   font-family: FontTextChild2;
   text-transform: uppercase;
-  letter-spacing: 1vmax;
+  letter-spacing: 0.5vmax;
   font-weight: bold;
+  margin: 0;
 }
 
 #content1 #skillsContent1 .containerElement {
@@ -35,6 +53,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-top-left-radius: 2vmax;
+  border-bottom-right-radius: 2vmax;
 }
 
 /* text */
@@ -43,7 +63,7 @@
   margin: 0;
   color: black;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 0.7vmax;
+  font-size: 0.9vmax;
 }
 
 #content1 #skillsContent1 .containerElement .container img {
@@ -54,35 +74,27 @@
 
 #content1 #skillsContent1 .containerElement .container img:hover {
   cursor: pointer;
-  transform: translate(0, -5px);
+  transform: translate(0, -3px);
 }
 
 /* ! Responsive */
-/* laptop 900px */
-@media only screen and (max-width: 900px) {
-}
 
 /* ipad */
 @media only screen and (max-width: 768px) {
+  #content1 #skillsContent1 .containerElement {
+    gap: 2vmax;
+  }
+
   #content1 #skillsContent1 .containerElement .container h6,
   #content1 #skillsContent1 .containerElement .container h5 {
     font-size: 1vmax;
   }
 }
 
-/* medium gadget */
-@media only screen and (max-width: 600px) {
-}
-
 /* low gadget */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 425px) {
   #content1 #skillsContent1 .containerElement {
-    display: flex;
-    gap: 0.7rem;
-  }
-
-  #content1 #skillsContent1 .containerElement .container {
-    padding: 0;
+    gap: 1vmax;
   }
 }
 
