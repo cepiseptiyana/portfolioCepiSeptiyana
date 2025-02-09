@@ -30,14 +30,20 @@ let aboutMeText = {
 
 <template>
   <div id="content1" class="container-fluid bg-light">
-    <div class="container containerColom bg-dark-subtle">
-      <div class="elementPp_1 bg-dark">
-        <aboutMe :aboutText="aboutMeText" />
-      </div>
-      <div class="colom-1 bg-dark">
-        <heading />
-        <imgCepi :cepiFoto="cepiFoto" />
-        <skills :pngSkill="pngSkill" />
+    <div class="container containerColom">
+      <div class="row">
+        <div class="col-md bg-dark">
+          <div class="elementPp_1 bg-dark">
+            <aboutMe :aboutText="aboutMeText" />
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="colom-1 bg-warning">
+            <heading />
+            <imgCepi :cepiFoto="cepiFoto" />
+            <skills :pngSkill="pngSkill" />
+          </div>
+        </div>
       </div>
     </div>
   </div>

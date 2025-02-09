@@ -24,7 +24,17 @@
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-  padding: 2vmax;
+}
+
+#content1 .containerColom .row {
+  gap: 12px;
+}
+
+#content1 .containerColom .col-md:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
 }
 
 #content1 .containerColom .elementPp_1 {

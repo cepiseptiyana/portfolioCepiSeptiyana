@@ -4,6 +4,6 @@ let sendValueFormToWa = defineModel('sendValueFormToWa')
 
 <template>
   <button @click.stop.prevent="sendValueFormToWa" type="submit" class="btn btn-primary">
-    kirim
+    sumbit
   </button>
 </template>

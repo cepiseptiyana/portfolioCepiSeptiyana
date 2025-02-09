@@ -9,9 +9,9 @@ let { movingPath } = defineProps(['movingPath'])
 <template>
   <div id="menuNavbar">
     <div id="menu">
-      <a class="btn btn-secondary" href="">My Home</a>
-      <a class="btn btn-secondary" :href="movingPath.myProject">My Project</a>
-      <a class="btn btn-secondary" :href="movingPath.myContact">My Contact</a>
+      <a class="btn btn-warning" href="">My Home</a>
+      <a class="btn btn-warning" :href="movingPath.myProject">My Project</a>
+      <a class="btn btn-warning" :href="movingPath.myContact">My Contact</a>
     </div>
 
     <div id="dropDown">

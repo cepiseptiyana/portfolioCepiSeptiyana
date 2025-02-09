@@ -19,8 +19,9 @@
 }
 
 #navbar #menuNavbar #menu a {
-  font-size: 0.6rem;
-  font-weight: 500;
+  color: #212529;
+  font-size: 0.7rem;
+  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   transition: 0.3s;

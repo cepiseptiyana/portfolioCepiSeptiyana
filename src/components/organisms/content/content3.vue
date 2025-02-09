@@ -21,6 +21,15 @@ function validationForm() {
   let email = document.getElementById('email').value
   let text = document.getElementById('komentar').value
 
+  // utils Wa
+  let noWa = '6285659519463'
+
+  var encodedMessage = encodeURIComponent(
+    'username: ' + username + '\n' + 'email: ' + email + '\n' + 'Message: ' + text + '\n',
+  )
+
+  let link = `https://wa.me/${noWa}?text=${encodedMessage}`
+
   if (username.length != 0) {
     if (email.length != 0) {
       if (validate(email)) {
@@ -31,10 +40,11 @@ function validationForm() {
             icon: 'success',
             confirmButtonText: 'Okay',
           })
+          window.open(link, '_blank')
         } else {
           Swal.fire({
             title: 'Peringatan!',
-            text: 'text masih kosong :)',
+            text: 'komentar belum di isi :)',
             icon: 'warning',
             confirmButtonText: 'Okay',
           })
@@ -42,7 +52,7 @@ function validationForm() {
       } else {
         Swal.fire({
           title: 'Peringatan!',
-          text: 'email tidak di ketahui :(',
+          text: 'email salah :(',
           icon: 'warning',
           confirmButtonText: 'Okay',
         })
@@ -58,7 +68,7 @@ function validationForm() {
   } else {
     Swal.fire({
       title: 'Peringatan!',
-      text: 'username masih kosong :)',
+      text: 'username belum di isi :)',
       icon: 'warning',
       confirmButtonText: 'Okay',
     })
@@ -78,7 +88,7 @@ function sendValueFormToWa() {
           <heading judulText="Let's chat" />
           <Paragraph :text="text.paragraph" />
         </div>
-        <div class="col-md bg-light">
+        <div class="col-md bg-warning">
           <formContent3 :text="text" :sendValueFormToWa="sendValueFormToWa" />
         </div>
       </div>

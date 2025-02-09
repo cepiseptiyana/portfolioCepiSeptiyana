@@ -4,7 +4,7 @@
 }
 
 #content1 .containerColom .colom-1 {
-  /* width: 100%; */
+  width: 100%;
   flex: 1;
   padding: 2vmax 1.2vmax;
   display: flex;
