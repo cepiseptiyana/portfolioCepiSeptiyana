@@ -34,7 +34,7 @@ section {
   position: fixed;
   padding: 10px;
   transition: 500ms;
-  transform: translateX(-60px);
+  transform: translateX(0);
   background-color: rgb(197, 197, 197);
   top: 20%;
   left: 1%;
@@ -44,7 +44,7 @@ section {
   picture {
     display: block;
     transition: 500ms;
-    transform: scale(0);
+    transform: scale(1);
 
     a {
       display: block;
@@ -59,7 +59,7 @@ section {
   /* close */
   picture.close {
     transition: 500ms;
-    transform: scale(1);
+    transform: scale(0);
   }
 
   .btn__close {
@@ -83,7 +83,7 @@ section {
 /* section slide */
 section.slide {
   transition: 500ms;
-  transform: translateX(0);
+  transform: translateX(-60px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,6 +103,30 @@ section.slide {
         }
       }
     }
+
+    /* Btn__close */
+    .btn__close {
+      cursor: pointer;
+      position: absolute;
+      top: 7%;
+      left: 100%;
+      background-color: rgb(130, 130, 130);
+      width: 15px;
+      height: 80%;
+      transition: 300ms;
+
+      &:hover {
+        background-color: rgb(71, 71, 71);
+        top: 18%;
+        height: 60%;
+      }
+    }
+  }
+
+  /* section slide */
+  section.slide {
+    transition: 500ms;
+    transform: translateX(-50px);
   }
 }
 </style>
