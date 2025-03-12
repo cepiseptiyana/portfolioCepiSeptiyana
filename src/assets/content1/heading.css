@@ -7,50 +7,44 @@
   text-transform: capitalize;
   text-align: center;
   color: #ffffff;
-}
 
-#content1 #headingContent1 h1 {
-  background-color: white;
-  color: #212529;
-  font-size: 3vmax;
-  font-family: FontTextChild2;
-  text-transform: uppercase;
-  letter-spacing: 0.2vmax;
+  h1 {
+    background-color: white;
+    color: #212529;
+    font-size: 3vmax;
+    font-family: FontTextChild2;
+    text-transform: uppercase;
+    letter-spacing: 0.2vmax;
+  }
 
-  border-top-right-radius: 10rem;
-  border-bottom-left-radius: 10rem;
-}
-
-#content1 #headingContent1 p {
-  border-bottom-left-radius: 10rem;
-  border-bottom-right-radius: 10rem;
-  background-color: white;
-  font-family: FontTextChild2;
-  color: #212529;
-  font-size: 2vmax;
-  text-align: center;
-  margin: 0;
+  p {
+    background-color: white;
+    font-family: FontTextChild2;
+    color: #212529;
+    font-size: 2vmax;
+    text-align: center;
+    margin: 0;
+  }
 }
 
 /* ! Responsive */
 
 /* Laptop medium */
 @media only screen and (max-width: 900px) {
-  #content1 #headingContent1 {
-    padding-bottom: 30px;
-  }
 }
 
 /* ipad */
 @media only screen and (max-width: 768px) {
   /* TEXT */
-  #content1 #headingContent1 h1 {
-    font-size: 4vmax;
-  }
+  #content1 #headingContent1 {
+    h1 {
+      font-size: 5vmax;
+    }
 
-  #content1 #headingContent1 p {
-    font-size: 2vmax;
-    word-wrap: break-word;
+    p {
+      font-size: 2.5vmax;
+      word-wrap: break-word;
+    }
   }
 }
 

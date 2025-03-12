@@ -88,7 +88,7 @@ function sendValueFormToWa() {
           <heading judulText="Let's chat" />
           <Paragraph :text="text.paragraph" />
         </div>
-        <div class="col-md bg-warning">
+        <div class="col-md bg-dark-subtle">
           <formContent3 :text="text" :sendValueFormToWa="sendValueFormToWa" />
         </div>
       </div>

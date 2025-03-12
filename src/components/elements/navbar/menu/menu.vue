@@ -2,16 +2,16 @@
 import feather from 'feather-icons'
 
 // humburger
-const align_right_icon = feather.icons['align-right'].toSvg({ color: '#0dcaf0' })
+const align_right_icon = feather.icons['align-right'].toSvg({ color: 'yellow' })
 let humSlideShow = defineModel('humSlideShow')
 let { movingPath } = defineProps(['movingPath'])
 </script>
 <template>
   <div id="menuNavbar">
     <div id="menu">
-      <a class="btn btn-warning" href="">My Home</a>
-      <a class="btn btn-warning" :href="movingPath.myProject">My Project</a>
-      <a class="btn btn-warning" :href="movingPath.myContact">My Contact</a>
+      <a class="btn btn-dark" href="">My Home</a>
+      <a class="btn btn-dark" :href="movingPath.myProject">My Project</a>
+      <a class="btn btn-dark" :href="movingPath.myContact">My Contact</a>
     </div>
 
     <div id="dropDown">

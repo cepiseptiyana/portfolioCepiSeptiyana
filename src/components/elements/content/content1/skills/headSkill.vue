@@ -1,3 +1,3 @@
 <template>
-  <h1>skills</h1>
+  <h1>my skills</h1>
 </template>

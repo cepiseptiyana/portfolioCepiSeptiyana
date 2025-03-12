@@ -1,10 +1,7 @@
 <script setup>
 import headSkill from './headSkill.vue'
-import htmlAtom from './html.vue'
-import skillCssAtom from './skillCss.vue'
-import skillJsAtom from './skillJs.vue'
-import skillVueAtom from './skillVue.vue'
-import github from './github.vue'
+
+import Icons from './Icons.vue'
 
 let { pngSkill } = defineProps(['pngSkill'])
 </script>
@@ -15,11 +12,13 @@ let { pngSkill } = defineProps(['pngSkill'])
       <headSkill />
     </div>
     <div class="containerElement">
-      <htmlAtom :iconHTML="pngSkill.iconHTML" />
-      <skillCssAtom :iconCSS="pngSkill.iconCSS" />
-      <skillJsAtom :iconJS="pngSkill.iconJS" />
-      <skillVueAtom :iconVue="pngSkill.iconVue" />
-      <github :iconGithub="pngSkill.iconGithub" />
+      <Icons :icon="pngSkill.iconHTML" head="HTML"></Icons>
+      <Icons :icon="pngSkill.iconCSS" head="CSS"></Icons>
+      <Icons :icon="pngSkill.iconJS" head="JAVASCRIPT"></Icons>
+      <Icons :icon="pngSkill.iconVue" head="VUE.JS"></Icons>
+      <Icons :icon="pngSkill.iconGithub" head="GITHUB"></Icons>
+      <Icons :icon="pngSkill.iconPinia" head="PINIA"></Icons>
+      <Icons :icon="pngSkill.iconVitest" head="VITEST"></Icons>
     </div>
   </div>
 </template>

@@ -1,16 +1,11 @@
-@font-face {
-  font-family: FontTextChild2;
-  src: url(../GoogleFont/RobotoCondensed-Black.ttf);
-}
-
-#content1 .containerColom .colom-1 {
-  width: 100%;
-  flex: 1;
-  padding: 2vmax 1.2vmax;
+/* row 2 */
+#content1 .containerColom .row:nth-child(2) .col-md {
+  padding: 2vmax;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  row-gap: 2vmax;
+  row-gap: 50px;
 }
 
 #content1 #skillsContent1 {
@@ -19,82 +14,90 @@
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  padding: 5px;
   z-index: 1;
+
+  .headSkill {
+    border-bottom: 1px white solid;
+    padding: 1.2vmax;
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    h1 {
+      color: #212529;
+      font-size: 3vmax;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.5vmax;
+      font-weight: bold;
+      margin: 0;
+    }
+  }
 }
 
-#content1 #skillsContent1 .headSkill {
-  background-color: white;
-  width: 100%;
-  text-align: center;
-  border-top-left-radius: 10rem;
-  border-bottom-right-radius: 10rem;
-}
-
-#content1 #skillsContent1 .headSkill h1 {
-  color: #212529;
-  font-size: 3vmax;
-  font-family: FontTextChild2;
-  text-transform: uppercase;
-  letter-spacing: 0.5vmax;
-  font-weight: bold;
-  margin: 0;
-}
-
+/* skill */
 #content1 #skillsContent1 .containerElement {
   display: flex;
-  gap: 0.5rem;
-}
-
-#content1 #skillsContent1 .containerElement .container {
-  background-color: white;
-  padding: 0.6vmax 1vmax;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-top-left-radius: 2vmax;
-  border-bottom-right-radius: 2vmax;
-}
+  gap: 1rem;
+  flex-wrap: wrap;
 
-/* text */
-#content1 #skillsContent1 .containerElement .container h6,
-#content1 #skillsContent1 .containerElement .container h5 {
-  margin: 0;
-  color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 0.9vmax;
-}
+  .wrapper__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-#content1 #skillsContent1 .containerElement .container img {
-  width: 2rem;
-  height: 2rem;
-  transition: 0.1s;
-}
+    /* text */
+    h6,
+    h5 {
+      font-family: courier;
+      color: #212529;
+      margin: 0;
+      font-size: 0.8vmax;
+    }
 
-#content1 #skillsContent1 .containerElement .container img:hover {
-  cursor: pointer;
-  transform: translate(0, -3px);
+    img {
+      width: 2rem;
+      height: 2rem;
+      transition: 0.1s;
+
+      &:hover {
+        cursor: pointer;
+        transform: translate(0, -3px);
+      }
+    }
+  }
 }
 
 /* ! Responsive */
 
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #content1 #skillsContent1 .containerElement {
-    gap: 2vmax;
-  }
+  #content1 #skillsContent1 {
+    .headSkill {
+      h1 {
+        font-size: 5vmax;
+      }
+    }
 
-  #content1 #skillsContent1 .containerElement .container h6,
-  #content1 #skillsContent1 .containerElement .container h5 {
-    font-size: 1vmax;
+    .containerElement {
+      gap: 2vmax;
+
+      .wrapper__icon h6,
+      .wrapper__icon h5 {
+        font-size: 1.3vmax;
+      }
+    }
   }
 }
 
 /* low gadget */
 @media only screen and (max-width: 425px) {
   #content1 #skillsContent1 .containerElement {
-    gap: 1vmax;
+    .wrapper__icon h6,
+    .wrapper__icon h5 {
+      font-size: 1.2vmax;
+    }
   }
 }
 
@@ -103,9 +106,9 @@
   #content1 #skillsContent1 .containerElement {
     display: flex;
     flex-wrap: wrap;
-  }
 
-  #content1 #skillsContent1 .containerElement .container {
-    width: 40%;
+    .wrapper__icon {
+      width: 40%;
+    }
   }
 }

@@ -12,6 +12,8 @@ import iconHTML from '@/assets/images/content1/iconHTML.png'
 import iconCSS from '@/assets/images/content1/iconCSS.png'
 import iconJS from '@/assets/images/content1/iconJS.png'
 import iconVue from '@/assets/images/content1/iconVue.png'
+import iconPinia from '@/assets/images/content1/piniaLogo.jpeg'
+import iconVitest from '@/assets/images/content1/vitestLogo.png'
 
 let pngSkill = {
   iconGithub,
@@ -19,30 +21,32 @@ let pngSkill = {
   iconCSS,
   iconJS,
   iconVue,
+  iconPinia,
+  iconVitest,
 }
 
 let aboutMeText = {
   head: 'about me',
   paragraph:
-    "My name is Cepi Septiyana. People usually call me Cepi. I'm 23 years old and I was born in Tangerang, on 19th September, 2001. I live in Tangerang since I was child and now I study in Universitas Terbuka Semester 7",
+    "My name is Cepi Septiyana. People usually call me Cepi. I'm 23 years old and I was born in Tangerang, on 19th September, 2001. I live in Tangerang since I was child and now I study in Universitas Terbuka Semester 7, I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section,I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.",
 }
 </script>
 
 <template>
   <div id="content1" class="container-fluid bg-light">
     <div class="container containerColom">
-      <div class="row">
-        <div class="col-md bg-dark">
-          <div class="elementPp_1 bg-dark">
+      <div class="row bg-dark">
+        <div class="col-md">
+          <div class="elementPp_1">
             <aboutMe :aboutText="aboutMeText" />
           </div>
         </div>
+      </div>
+      <div class="row bg-dark-subtle">
         <div class="col-md">
-          <div class="colom-1 bg-warning">
-            <heading />
-            <imgCepi :cepiFoto="cepiFoto" />
-            <skills :pngSkill="pngSkill" />
-          </div>
+          <heading />
+          <imgCepi :cepiFoto="cepiFoto" />
+          <skills :pngSkill="pngSkill" />
         </div>
       </div>
     </div>

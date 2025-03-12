@@ -3,118 +3,140 @@
   justify-content: start;
   gap: 1rem;
   overflow-x: scroll;
-}
 
-#content2 .container::-webkit-scrollbar {
-  height: 0.3rem;
-}
+  &::-webkit-scrollbar {
+    height: 0.3rem;
+  }
 
-#content2 .container::-webkit-scrollbar-track {
-  background-color: rgb(0, 0, 0);
-}
+  &::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+  }
 
-#content2 .container::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 255, 255);
-}
+  &::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+  }
 
-#content2 .container::-webkit-scrollbar-thumb:hover {
-  cursor: pointer;
-}
+  &::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
 
-#content2 .container .dataProject {
-  width: 100%;
-  gap: 1rem;
-  flex-shrink: 0;
-  display: flex;
-}
+  .dataProject {
+    width: 150%;
+    gap: 1rem;
+    flex-shrink: 0;
+    display: flex;
 
-/* text */
-#content2 .container .dataProject .textProject {
-  border: 2px solid white;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
+    /* text */
+    .textProject {
+      border: 2px solid white;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
 
-#content2 .container .dataProject .textProject h1 {
-  font-size: 3vmax;
-  color: white;
-  text-shadow:
-    0 1px 0 #ccc,
-    0 2px 0 #c9c9c9,
-    0 3px 0 #bbb,
-    0 4px 0 #b9b9b9,
-    0 5px 0 #aaa,
-    0 6px 1px rgba(0, 0, 0, 0.1),
-    0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3),
-    0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25),
-    0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
-}
+      h1 {
+        font-size: 3vmax;
+        color: white;
+        text-shadow:
+          0 1px 0 #ccc,
+          0 2px 0 #c9c9c9,
+          0 3px 0 #bbb,
+          0 4px 0 #b9b9b9,
+          0 5px 0 #aaa,
+          0 6px 1px rgba(0, 0, 0, 0.1),
+          0 0 5px rgba(0, 0, 0, 0.1),
+          0 1px 3px rgba(0, 0, 0, 0.3),
+          0 3px 5px rgba(0, 0, 0, 0.2),
+          0 5px 10px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.2),
+          0 20px 20px rgba(0, 0, 0, 0.15);
+      }
 
-#content2 .container .dataProject .textProject p {
-  font-size: 1.2vmax;
-  color: white;
-}
+      p {
+        font-family: courier;
+        font-size: 1.2vmax;
+        color: white;
+      }
+    }
 
-/* Image */
-#content2 .container .dataProject .imgProject {
-  width: 100%;
-}
+    /* Image */
+    .imgProject {
+      width: 100%;
+    }
 
-#content2 .container .dataProject .imgProject a img {
-  border: 3px solid rgb(0, 0, 0);
-  width: 100%;
+    a img {
+      border: 3px solid rgb(0, 0, 0);
+      width: 100%;
+    }
+  }
 }
 
 /* ! Responsive */
 
 /* Laptop medium */
 @media only screen and (max-width: 992px) {
+  #content2 {
+    padding: 0;
+  }
+
   #content2 .container .dataProject {
     width: 100%;
     display: flex;
     gap: 2rem;
     flex-direction: column;
-  }
 
-  #content2 .container .dataProject .textProject {
-    height: 40vh;
-  }
+    .textProject {
+      height: 40vh;
 
-  /* TEXT */
-  #content2 .container .dataProject .textProject h1 {
-    font-size: 4.5vmax;
-    word-wrap: break-word;
-  }
+      /* TEXT */
+      h1 {
+        font-size: 4.5vmax;
+        word-wrap: break-word;
+      }
 
-  #content2 .container .dataProject .textProject p {
-    font-size: 1.8vmax;
-    word-wrap: break-word;
+      p {
+        font-size: 1.8vmax;
+        word-wrap: break-word;
+      }
+    }
   }
 }
 
 /* ipad */
 @media only screen and (max-width: 768px) {
+  #content2 .container .dataProject {
+    width: 70%;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    .textProject {
+      height: 40vh;
+
+      /* TEXT */
+      h1 {
+        font-size: 4.5vmax;
+        word-wrap: break-word;
+      }
+
+      p {
+        font-size: 1.8vmax;
+        word-wrap: break-word;
+      }
+    }
+  }
+
   /* TEXT */
   #content2 .container .dataProject .textProject h1 {
-    font-size: 4vmax;
+    font-size: 5vmax;
     word-wrap: break-word;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  #content2 .container .dataProject .textProject {
-    height: 50vh;
-  }
-
-  #content2 .container .dataProject .textProject p {
-    font-size: 1.8vmax;
-    word-wrap: break-word;
+  #content2 .container .dataProject {
+    width: 120%;
   }
 }

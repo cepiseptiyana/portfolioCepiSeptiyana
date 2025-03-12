@@ -13,6 +13,5 @@ let { projectCard } = defineProps(['projectCard'])
   <div id="content2" class="bg-dark">
     <textProject :textProjectValue="textProjectValue.judul" />
     <project :projectCard="projectCard" />
-    <textProject :textProjectValue="textProjectValue.footer" />
   </div>
 </template>

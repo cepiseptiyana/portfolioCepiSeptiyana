@@ -1,5 +1,5 @@
 <script setup>
-import entryViews from './views/main.vue'
+import entryViews from '@/components/views/main.vue'
 </script>
 
 <template>

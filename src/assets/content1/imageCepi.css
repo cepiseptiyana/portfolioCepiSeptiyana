@@ -1,9 +1,4 @@
-#content1 .containerColom .colom-1 .cepiImg {
+#content1 .containerColom .cepiImg {
   border: 3px solid rgb(255, 255, 255);
-  /* border-radius: 50%; */
-  width: 120px;
-}
-
-#content1 .containerColom .colom-1 .cepiImg::after {
-  content: 'okey';
+  width: 200px;
 }

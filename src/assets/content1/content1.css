@@ -3,14 +3,9 @@
   src: url(../GoogleFont/DancingScript-Bold.ttf);
 }
 
-@font-face {
-  font-family: FontTextHead;
-  src: url(../GoogleFont/RobotoCondensed-Black.ttf);
-}
-
 #content1 {
+  padding: 50px;
   position: relative;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,40 +14,32 @@
 
 #content1 .containerColom {
   position: relative;
+  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 1rem;
 }
 
-#content1 .containerColom .row {
-  gap: 12px;
-}
-
-#content1 .containerColom .col-md:nth-child(1) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: red; */
+/* row 1 */
+#content1 .containerColom .row:nth-child(1) {
+  padding: 2vmax;
 }
 
 #content1 .containerColom .elementPp_1 {
-  flex: 1;
   text-align: center;
-  padding: 2vmax 1.2vmax;
 }
 
 #content1 .containerColom .elementPp_1 h1 {
-  font-family: FontTextHead;
-  background-color: white;
+  font-family: sans-serif;
+  color: #343a40;
   text-transform: capitalize;
   font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 3vmax;
 }
 
 #content1 .containerColom .elementPp_1 p {
-  font-family: FontTextChild1;
+  font-family: courier;
   text-transform: capitalize;
+  font-size: 1.2vmax;
   margin: 0;
 }
 
@@ -62,20 +49,14 @@
 
 /* ipad */
 @media only screen and (max-width: 768px) {
-  #content1 .containerColom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 1rem;
-    padding: 2vmax;
-  }
+  #content1 .containerColom .elementPp_1 {
+    h1 {
+      font-size: 5vmax;
+    }
 
-  #content1 .containerColom .colom-1 {
-    width: 80%;
-    /* flex: 1; */
-    padding: 2vmax 1.2vmax;
-    row-gap: 20px;
+    p {
+      font-size: 2vmax;
+    }
   }
 }
 
@@ -85,7 +66,12 @@
 
 /* low gadget */
 @media only screen and (max-width: 425px) {
-  #content1 .containerColom .colom-1 {
+  #content1 {
+    padding: 5px;
+  }
+
+  /* row 1 */
+  #content1 .containerColom {
     width: 100%;
   }
 }
