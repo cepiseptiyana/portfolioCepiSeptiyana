@@ -2,7 +2,9 @@
 import feather from 'feather-icons'
 
 // humburger
-const align_right_icon = feather.icons['align-right'].toSvg({ color: 'yellow' })
+const align_right_icon = feather.icons['align-right'].toSvg({
+  color: '#ced4da',
+})
 let humSlideShow = defineModel('humSlideShow')
 let { movingPath } = defineProps(['movingPath'])
 </script>

@@ -4,11 +4,13 @@ import gmail from '@/assets/images/socialMedia/gmail.jpeg'
 import linkein from '@/assets/images/socialMedia/linkein.png'
 import wa from '@/assets/images/socialMedia/whatsapp.png'
 import { ref } from 'vue'
+
+const isActive = ref(false)
 </script>
 
 <template>
-  <section class="socialMedia">
-    <picture>
+  <section :class="{ slide: isActive }">
+    <picture :class="{ close: isActive }">
       <a href="https://www.instagram.com/ceps1920/" target="_blank">
         <img :src="instagram" alt="instagramCepi" title="instagramCepi" />
       </a>
@@ -22,6 +24,8 @@ import { ref } from 'vue'
         <img :src="wa" alt="whatsappCepi" title="whatsappCepi" />
       </a>
     </picture>
+
+    <div class="btn__close" @click="isActive = !isActive"></div>
   </section>
 </template>
 
@@ -29,11 +33,19 @@ import { ref } from 'vue'
 section {
   position: fixed;
   padding: 10px;
+  transition: 500ms;
+  transform: translateX(-60px);
+  background-color: rgb(197, 197, 197);
   top: 20%;
   left: 1%;
+
   z-index: 9999;
 
   picture {
+    display: block;
+    transition: 500ms;
+    transform: scale(0);
+
     a {
       display: block;
       margin-bottom: 10px;
@@ -44,25 +56,34 @@ section {
     }
   }
 
-  &::after {
-    position: absolute;
-    cursor: pointer;
-    top: 10%;
-    left: 100%;
-    display: block;
-    content: '';
-    width: 7px;
-    height: 80%;
-    background-color: rgb(217, 217, 217);
-    transition: 300ms;
+  /* close */
+  picture.close {
+    transition: 500ms;
+    transform: scale(1);
   }
 
-  &:hover::after {
-    background-color: rgb(76, 76, 76);
-    top: 25%;
-    width: 15px;
-    height: 50%;
+  .btn__close {
+    cursor: pointer;
+    position: absolute;
+    top: 7%;
+    left: 100%;
+    background-color: rgb(130, 130, 130);
+    width: 10px;
+    height: 80%;
+    transition: 300ms;
+
+    &:hover {
+      background-color: rgb(71, 71, 71);
+      top: 18%;
+      height: 60%;
+    }
   }
+}
+
+/* section slide */
+section.slide {
+  transition: 500ms;
+  transform: translateX(0);
 }
 
 @media only screen and (max-width: 768px) {
