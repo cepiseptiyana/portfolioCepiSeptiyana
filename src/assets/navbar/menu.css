@@ -19,6 +19,7 @@
 }
 
 #navbar #menuNavbar #menu a {
+  cursor: url('@/assets/images/cursorLink.png'), auto;
   color: #ffffff;
   font-size: 0.7rem;
   font-weight: bold;

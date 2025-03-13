@@ -47,6 +47,7 @@ section {
     transform: scale(1);
 
     a {
+      cursor: url('@/assets/images/cursorLink.png'), auto;
       display: block;
       margin-bottom: 10px;
 
@@ -63,7 +64,6 @@ section {
   }
 
   .btn__close {
-    cursor: pointer;
     position: absolute;
     top: 7%;
     left: 100%;

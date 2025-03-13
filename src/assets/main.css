@@ -12,6 +12,7 @@
 
 body {
   background-repeat: no-repeat;
+  cursor: url('@/assets/images/cursorPedang.png'), auto;
 }
 
 body::-webkit-scrollbar {
