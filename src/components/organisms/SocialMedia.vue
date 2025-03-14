@@ -36,8 +36,8 @@ section {
   transition: 500ms;
   transform: translateX(0);
   background-color: rgb(197, 197, 197);
-  top: 20%;
-  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
 
   z-index: 9999;
 
@@ -65,8 +65,9 @@ section {
 
   .btn__close {
     position: absolute;
-    top: 7%;
+    top: 50%;
     left: 100%;
+    transform: translateY(-50%);
     background-color: rgb(130, 130, 130);
     width: 10px;
     height: 80%;
@@ -74,7 +75,6 @@ section {
 
     &:hover {
       background-color: rgb(71, 71, 71);
-      top: 18%;
       height: 60%;
     }
   }
@@ -82,17 +82,14 @@ section {
 
 /* section slide */
 section.slide {
+  top: 50%;
   transition: 500ms;
-  transform: translateX(-60px);
+  transform: translateY(-50%) translateX(-60px);
 }
 
 @media only screen and (max-width: 768px) {
   section {
-    position: fixed;
-    top: 20%;
-    left: 1%;
-    z-index: 9999;
-
+    left: 10px;
     picture {
       a {
         display: block;
@@ -107,26 +104,17 @@ section.slide {
     /* Btn__close */
     .btn__close {
       cursor: pointer;
-      position: absolute;
-      top: 7%;
-      left: 100%;
-      background-color: rgb(130, 130, 130);
       width: 15px;
       height: 80%;
       transition: 300ms;
-
-      &:hover {
-        background-color: rgb(71, 71, 71);
-        top: 18%;
-        height: 60%;
-      }
     }
   }
 
   /* section slide */
   section.slide {
+    top: 50%;
     transition: 500ms;
-    transform: translateX(-50px);
+    transform: translateY(-50%) translateX(-60px);
   }
 }
 </style>

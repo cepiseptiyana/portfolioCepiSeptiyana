@@ -43,32 +43,32 @@ function validationForm() {
           window.open(link, '_blank')
         } else {
           Swal.fire({
-            title: 'Peringatan!',
-            text: 'komentar belum di isi :)',
+            title: 'Warning!',
+            text: 'komentar empty please fill in :)',
             icon: 'warning',
             confirmButtonText: 'Okay',
           })
         }
       } else {
         Swal.fire({
-          title: 'Peringatan!',
-          text: 'email salah :(',
+          title: 'Warning!',
+          text: 'email invalid please fill in again :)',
           icon: 'warning',
           confirmButtonText: 'Okay',
         })
       }
     } else {
       Swal.fire({
-        title: 'Peringatan!',
-        text: 'email masih kosong :)',
+        title: 'Warning!',
+        text: 'email empty please fill in :)',
         icon: 'warning',
         confirmButtonText: 'Okay',
       })
     }
   } else {
     Swal.fire({
-      title: 'Peringatan!',
-      text: 'username belum di isi :)',
+      title: 'Warning!',
+      text: 'username empty please fill in :)',
       icon: 'warning',
       confirmButtonText: 'Okay',
     })
