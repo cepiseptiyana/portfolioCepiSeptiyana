@@ -14,6 +14,7 @@ import iconJS from '@/assets/images/content1/iconJS.png'
 import iconVue from '@/assets/images/content1/iconVue.png'
 import iconPinia from '@/assets/images/content1/piniaLogo.jpeg'
 import iconVitest from '@/assets/images/content1/vitestLogo.png'
+import bootstrapLogo from '@/assets/images/content1/bootstrapLogo.png'
 
 let pngSkill = {
   iconGithub,
@@ -23,6 +24,7 @@ let pngSkill = {
   iconVue,
   iconPinia,
   iconVitest,
+  bootstrapLogo,
 }
 
 let aboutMeText = {

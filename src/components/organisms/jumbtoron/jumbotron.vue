@@ -6,7 +6,7 @@ let text = {
   textChild_1: 'cepi septiyana',
   textChild_2: 'portfolio',
   textChild_3: 'Creative',
-  textChild_4: '2025',
+  textChild_4: 'Frontend',
   imageRounded,
 }
 </script>

@@ -67,6 +67,7 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  width: 30%;
 
   .wrapper__icon {
     display: flex;
@@ -99,7 +100,7 @@
 /* ! Responsive */
 
 /* ipad */
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #content1 .containerColom .row:nth-child(2) .col-md {
     #headingContent1 {
       h1 {
@@ -120,6 +121,7 @@
 
       .containerElement {
         gap: 2vmax;
+        width: 60%;
 
         .wrapper__icon h6,
         .wrapper__icon h5 {
@@ -131,8 +133,10 @@
 }
 
 /* low gadget */
-@media only screen and (max-width: 425px) {
-  #content1 #skillsContent1 .containerElement {
+@media screen and (max-width: 568px) {
+  #content1 .containerColom .row:nth-child(2) .col-md #skillsContent1 .containerElement {
+    width: 100%;
+
     .wrapper__icon h6,
     .wrapper__icon h5 {
       font-size: 1.2vmax;
@@ -141,7 +145,7 @@
 }
 
 /* low gadget */
-@media only screen and (max-width: 250px) {
+@media screen and (max-width: 250px) {
   #content1 #skillsContent1 .containerElement {
     display: flex;
     flex-wrap: wrap;
