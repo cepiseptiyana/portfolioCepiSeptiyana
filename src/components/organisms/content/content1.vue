@@ -44,7 +44,7 @@ let aboutMeText = {
           </div>
         </div>
       </div>
-      <div class="row bg-dark-subtle">
+      <div class="row">
         <div class="col-md">
           <heading />
           <imgCepi :cepiFoto="cepiFoto" />
