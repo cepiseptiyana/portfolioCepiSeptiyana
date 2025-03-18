@@ -1,8 +1,11 @@
 <script setup>
+// Icons
 import instagram from '@/assets/images/socialMedia/instagram.jpeg'
 import gmail from '@/assets/images/socialMedia/gmail.jpeg'
-import linkein from '@/assets/images/socialMedia/linkein.png'
+// import linkein from '@/assets/images/socialMedia/linkein.png'
 import wa from '@/assets/images/socialMedia/whatsapp.png'
+import iconGithub from '@/assets/images/socialMedia/iconGithub.png'
+
 import { ref } from 'vue'
 
 const isActive = ref(false)
@@ -17,8 +20,8 @@ const isActive = ref(false)
       <a href="mailto:cepifams3@gmail.com" target="_blank">
         <img :src="gmail" alt="gmailCepi" title="gmailCepi" />
       </a>
-      <a href="https://www.linkedin.com/in/cepi-septiyana-5702b0303/" target="_blank">
-        <img :src="linkein" alt="linkeinCepi" title="linkeinCepi" />
+      <a href="https://github.com/cepiseptiyana" target="_blank">
+        <img :src="iconGithub" alt="linkeinCepi" title="githubCepi" />
       </a>
       <a href="https://wa.me/6285659519463" target="_blank">
         <img :src="wa" alt="whatsappCepi" title="whatsappCepi" />
