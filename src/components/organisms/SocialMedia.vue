@@ -14,9 +14,6 @@ const isActive = ref(false)
 <template>
   <section :class="{ slide: isActive }">
     <picture :class="{ close: isActive }">
-      <a href="https://www.instagram.com/ceps1920/" target="_blank">
-        <img :src="instagram" alt="instagramCepi" title="instagramCepi" />
-      </a>
       <a href="mailto:cepifams3@gmail.com" target="_blank">
         <img :src="gmail" alt="gmailCepi" title="gmailCepi" />
       </a>
